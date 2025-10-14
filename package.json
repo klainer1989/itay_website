@@ -1,4 +1,11 @@
 {
+  "engines": {
+    "node": "20.x",
+    "npm": "9.x"
+  }
+}
+
+{
   "name": "itay_website",
   "version": "0.1.0",
   "private": true,
