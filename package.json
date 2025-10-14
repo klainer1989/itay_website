@@ -1,7 +1,6 @@
 {
   "name": "itay_website",
   "version": "0.1.0",
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -22,9 +21,5 @@
     "eslint": "^8.56.0",
     "eslint-config-next": "14.2.0",
     "@eslint/eslintrc": "^3"
-  },
-  "engines": {
-    "node": "20.x",
-    "npm": ">=9.x"
   }
 }
