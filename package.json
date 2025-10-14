@@ -23,7 +23,7 @@
     "@eslint/eslintrc": "^3"
   },
   "engines": {
-    "node": ">=20",
-    "npm": ">=10"
+    "node": "20.x",
+    "npm": "9.x"
   }
 }
