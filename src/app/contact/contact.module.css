@@ -1,0 +1,315 @@
+.page {
+  direction: rtl;
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2c7a2c 0%, #4a9d4a 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.contact {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contactInfo h2,
+.contactForm h2 {
+  color: #2c7a2c;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contactIcon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contactItem h3 {
+  color: #2c7a2c;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.contactItem p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.contactLink {
+  color: #2c7a2c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #245a24;
+}
+
+.whatsappButton {
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.whatsappButton:hover {
+  background: #1da851;
+  transform: translateY(-2px);
+}
+
+.hours {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hours h3 {
+  color: #2c7a2c;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.hoursGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.hoursGrid > div:nth-child(odd) {
+  font-weight: 500;
+  color: #333;
+}
+
+.hoursGrid > div:nth-child(even) {
+  color: #666;
+  text-align: left;
+}
+
+.contactForm {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.successMessage {
+  background: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #c3e6cb;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  text-align: right;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #2c7a2c;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  background: #2c7a2c;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #245a24;
+  transform: translateY(-2px);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.map {
+  padding: 80px 0;
+  background: white;
+}
+
+.map h2 {
+  text-align: center;
+  color: #2c7a2c;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.mapPlaceholder {
+  background: #f8f9fa;
+  border: 2px dashed #ccc;
+  border-radius: 15px;
+  padding: 3rem;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapContent h3 {
+  color: #2c7a2c;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.mapContent p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.mapButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.mapButton {
+  background: #2c7a2c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.mapButton:hover {
+  background: #245a24;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .contactContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contactItem {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .mapButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map h2 {
+    font-size: 2rem;
+  }
+
+  .hoursGrid > div:nth-child(even) {
+    text-align: right;
+  }
+}

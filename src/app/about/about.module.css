@@ -1,0 +1,203 @@
+.page {
+  direction: rtl;
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2c7a2c 0%, #4a9d4a 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.about {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.textContent h2 {
+  color: #2c7a2c;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.textContent h3 {
+  color: #2c7a2c;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.textContent p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.textContent ul {
+  margin: 1rem 0 2rem 0;
+  padding-right: 2rem;
+}
+
+.textContent li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.imagePlaceholder {
+  background: #e9ecef;
+  border: 2px dashed #ccc;
+  border-radius: 15px;
+  padding: 3rem;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.stat {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stat h4 {
+  font-size: 2rem;
+  color: #2c7a2c;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.mission {
+  padding: 80px 0;
+  background: white;
+  text-align: center;
+}
+
+.mission h2 {
+  color: #2c7a2c;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.mission p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #555;
+}
+
+.cta {
+  background: #f8f9fa;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta h3 {
+  color: #2c7a2c;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.ctaButton {
+  background: #2c7a2c;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(44, 122, 44, 0.3);
+}
+
+.ctaButton:hover {
+  background: #245a24;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(44, 122, 44, 0.4);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat {
+    padding: 1rem;
+  }
+
+  .stat h4 {
+    font-size: 1.5rem;
+  }
+
+  .mission h2 {
+    font-size: 2rem;
+  }
+
+  .textContent h2 {
+    font-size: 1.8rem;
+  }
+}
