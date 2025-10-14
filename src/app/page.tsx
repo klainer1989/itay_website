@@ -13,12 +13,8 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <h1>Welcome to Itay's Website</h1>
+        <p>This is the beginning of something great!</p>
 
         <div className={styles.ctas}>
           <a
