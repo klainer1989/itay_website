@@ -1,40 +1,100 @@
 .nav {
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-md);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   direction: rtl;
+  transition: all var(--transition-normal);
+  border-bottom: 1px solid rgba(44, 122, 44, 0.1);
+}
+
+.nav:hover {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow-lg);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2c7a2c;
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: var(--primary-green-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--primary-green-gradient);
+  border-radius: 2px;
+  transition: width var(--transition-normal);
+}
+
+.logo:hover::after {
+  width: 100%;
 }
 
 .logo a {
   text-decoration: none;
   color: inherit;
+  transition: all var(--transition-normal);
+}
+
+.logo a:hover {
+  transform: scale(1.05);
 }
 
 .menuToggle {
   display: none;
   background: none;
-  border: none;
+  border: 2px solid var(--primary-green);
+  border-radius: var(--radius-md);
   font-size: 1.2rem;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.75rem;
+  color: var(--primary-green);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.menuToggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-green-gradient);
+  transition: left var(--transition-normal);
+  z-index: -1;
+}
+
+.menuToggle:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.menuToggle:hover::before {
+  left: 0;
 }
 
 .menu {
@@ -42,24 +102,57 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .menuItem {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  color: var(--gray-800);
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  font-size: 1.05rem;
+}
+
+.menuItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-green-gradient);
+  transition: left var(--transition-normal);
+  z-index: -1;
 }
 
 .menuItem:hover {
-  background-color: #2c7a2c;
   color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.menuItem:hover::before {
+  left: 0;
+}
+
+.menuItem:active {
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
+  .container {
+    height: 70px;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
   .menuToggle {
     display: block;
   }
@@ -69,15 +162,17 @@
     top: 100%;
     right: 0;
     left: 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: 1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-100%);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-20px);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
-    gap: 0;
+    transition: all var(--transition-normal);
+    gap: 0.5rem;
+    border-top: 1px solid var(--gray-200);
   }
 
   .menuOpen {
@@ -92,12 +187,20 @@
 
   .menuItem {
     display: block;
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
+    padding: 1rem 1.5rem;
     text-align: center;
+    border-radius: var(--radius-md);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid transparent;
+  }
+
+  .menuItem:hover {
+    border-color: var(--primary-green);
+    transform: translateX(-5px);
   }
 
   .menuItem:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
   }
 }
