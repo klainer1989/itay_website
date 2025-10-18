@@ -76,8 +76,8 @@ export default function Contact() {
                 <div className={styles.contactIcon}>📞</div>
                 <div>
                   <h3>טלפון</h3>
-                  <p>050-123-4567</p>
-                  <a href="tel:050-123-4567" className={styles.contactLink}>
+                  <p>054-643-3573</p>
+                  <a href="tel:054-643-3573" className={styles.contactLink}>
                     התקשר עכשיו
                   </a>
                 </div>
@@ -87,8 +87,8 @@ export default function Contact() {
                 <div className={styles.contactIcon}>📧</div>
                 <div>
                   <h3>אימייל</h3>
-                  <p>itay@nutrition.co.il</p>
-                  <a href="mailto:itay@nutrition.co.il" className={styles.contactLink}>
+                  <p>klainer1989@gmail.com</p>
+                  <a href="mailto:klainer1989@gmail.com" className={styles.contactLink}>
                     שלח מייל
                   </a>
                 </div>
@@ -177,7 +177,7 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="050-123-4567"
+                      placeholder="054-643-3573"
                     />
                   </div>
                 </div>
