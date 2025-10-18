@@ -53,7 +53,7 @@ export default function Footer() {
                 📷
               </a>
               <a
-                href="https://wa.me/97254-643-3573"
+                href="https://wa.me/972546433573"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
