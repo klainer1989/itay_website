@@ -35,7 +35,7 @@ export default function Footer() {
 
             <div className={styles.socialLinks}>
               <a
-                href="https://facebook.com/itaynutrition"
+                href="https://facebook.com/itay.klainer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
@@ -44,7 +44,7 @@ export default function Footer() {
                 📘
               </a>
               <a
-                href="https://instagram.com/itaynutrition"
+                href="https://instagram.com/itay_klainer_rd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
@@ -53,7 +53,7 @@ export default function Footer() {
                 📷
               </a>
               <a
-                href="https://wa.me/972501234567"
+                href="https://wa.me/97254-643-3573"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
