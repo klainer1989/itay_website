@@ -100,7 +100,7 @@ export default function Contact() {
                   <h3>WhatsApp</h3>
                   <p>הדרך הטובה ביותר ליצירת קשר</p>
                   <a
-                    href={`https://wa.me/972501234567?text=${whatsappMessage}`}
+                    href={`https://wa.me/972546433573?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.whatsappButton}

@@ -33,7 +33,7 @@ export default function FixedAppointmentButton() {
       {/* WhatsApp floating button */}
       <div className={styles.whatsappButton}>
         <a
-          href="https://wa.me/972501234567?text=שלום%20איתי!%20אני%20מעוניין/ת%20לקבוע%20פגישה"
+          href="https://wa.me/972546433573?text=שלום%20איתי!%20אני%20מעוניין/ת%20לקבוע%20פגישה"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.whatsappLink}
