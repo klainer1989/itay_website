@@ -91,11 +91,11 @@ export default function Footer() {
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
                 <span className={styles.contactIcon}>📞</span>
-                <a href="tel:050-123-4567">050-123-4567</a>
+                <a href="tel:054-643-3573">054-643-3573</a>
               </div>
               <div className={styles.contactItem}>
                 <span className={styles.contactIcon}>📧</span>
-                <a href="mailto:itay@nutrition.co.il">itay@nutrition.co.il</a>
+                <a href="mailto:klainer1989@gmail.com">klainer1989@gmail.com</a>
               </div>
               <div className={styles.contactItem}>
                 <span className={styles.contactIcon}>📍</span>
