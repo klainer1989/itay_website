@@ -8,7 +8,7 @@ export default function About() {
         <div className={styles.container}>
           <h1>אודותיי</h1>
           <p className={styles.subtitle}>
-            איתי - דיאטן קלינית מוסמך ומומחית בתחום הבריאטריה
+            איתי - דיאטן קליני מוסמך ומומחית בתחום הבריאטריה
           </p>
         </div>
       </section>
