@@ -109,7 +109,7 @@ export default function Services() {
                   ))}
                 </ul>
 
-                <div className={styles.servicePrice}>{service.price}</div>
+               
 
                 <Link href="/contact" className={styles.serviceButton}>
                   קבע פגישה
