@@ -14,7 +14,7 @@ export default function Services() {
         'מעקב תזונתי ארוך טווח',
         'טיפול בסיבוכים תזונתיים'
       ],
-      price: 'החל מ-300 ש"ח לפגישה'
+      
     },
     {
       id: 'preparation',
@@ -27,7 +27,7 @@ export default function Services() {
         'הכנה נפשית ורגשית',
         'הדרכה על שינויי אורח חיים'
       ],
-      price: 'החל מ-250 ש"ח לפגישה'
+      
     },
     {
       id: 'post-surgery',
@@ -40,7 +40,7 @@ export default function Services() {
         'מניעת חוסרים תזונתיים',
         'ליווי בחזרה לפעילות'
       ],
-      price: 'החל מ-280 ש"ח לפגישה'
+      
     },
     {
       id: 'children',
@@ -53,7 +53,7 @@ export default function Services() {
         'הדרכת הורים',
         'טיפול בהפרעות אכילה'
       ],
-      price: 'החל מ-200 ש"ח לפגישה'
+      
     },
     {
       id: 'weight-loss-meds',
@@ -66,7 +66,7 @@ export default function Services() {
         'התאמת תזונה לטיפול',
         'ליווי רפואי מתמחה'
       ],
-      price: 'החל מ-350 ש"ח לפגישה'
+      
     },
     {
       id: 'online-coaching',
@@ -79,7 +79,7 @@ export default function Services() {
         'מעקב יומי דרך אפליקציה',
         'זמינות לשאלות בווטסאפ'
       ],
-      price: 'החל מ-180 ש"ח לפגישה'
+      
     }
   ];
 

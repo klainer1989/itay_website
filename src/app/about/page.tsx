@@ -1,89 +1,103 @@
-import Link from 'next/link';
-import styles from './about.module.css';
+import Link from "next/link";
+import styles from "./about.module.css";
 
-export default function About() {
+export const metadata = {
+  title: "אודות | Itay-Nutrition",
+  description: "איתי קליינר – דיאטן קליני לבריאטריה, תזונת ילדים ואורח חיים בריא",
+};
+
+export default function AboutPage() {
   return (
-    <div className={styles.page}>
+    <main className={styles.page}>
+      {/* HERO */}
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>אודותיי</h1>
+          <h1>אודות איתי קליינר</h1>
           <p className={styles.subtitle}>
-            איתי - דיאטן קליני מוסמך ומומחית בתחום הבריאטריה
+            אני איתי קליינר – דיאטן קליני (R.D), מלווה מטופלים לפני ואחרי ניתוחים בריאטריים,{" "}
+            אנשים בתהליכי שינוי אורח חיים,{" "}
+            ילדים ובני נוער עם עודף משקל.{" "}
+            הגישה שלי משלבת ידע קליני מעמיק, הקשבה אמיתית, ויחס אישי לאורך כל הדרך.
           </p>
+
+          <div className={styles.heroButtons}>
+            <Link href="/contact" className={styles.primaryButton}>צור קשר</Link>
+            <Link href="/services" className={styles.secondaryButton}>לשירותים שלי</Link>
+          </div>
         </div>
       </section>
 
-      <section className={styles.about}>
+      {/* השכלה והתמחויות */}
+      <section className={styles.section}>
         <div className={styles.container}>
-          <div className={styles.content}>
-            <div className={styles.textContent}>
-              <h2>הרקע המקצועי שלי</h2>
-              <p>
-                אני איתי, דיאטן קליני מוסמך עם התמחות בתחום הבריאטריה ותזונת ילדים.
-                עם מעל 10 שנות ניסיון בתחום, אני מלווה מטופלים במסע לירידה במשקל ובניית אורח חיים בריא.
-              </p>
-
-              <h3>ההשכלה והכישורים שלי</h3>
-              <ul>
-                <li>תואר 1 בתזונה ממכללת תל חי</li>
-                <li>תואר 2 בבריאות הציבור מאוניברסיטת חיפה</li>
-                <li>התמחות בבריאטריה מבית החולים איכילוב</li>
-                <li>קורס מתקדם בתזונת ילדים ונוער</li>
-                <li>הסמכה בייעוץ תזונתי מקוון</li>
-              </ul>
-
-              <h3>הגישה שלי</h3>
-              <p>
-                אני מאמין שכל אדם יחיד במינו ומצריך גישה אישית ומותאמת. הליווי שלי מבוסס על:
-              </p>
-              <ul>
-                <li>הבנה עמוקה של הצרכים האישיים של כל מטופל</li>
-                <li>יצירת תוכנית תזונה מעשית וישימה</li>
-                <li>ליווי צמוד ותמיכה רגשית לאורך כל התהליך</li>
-                <li>דגש על שינוי אורח חיים לטווח הארוך</li>
-              </ul>
+          <h2>השכלה והתמחויות</h2>
+          <div className={styles.badges}>
+            <div className={styles.badge}>
+              <span className={styles.badgeTitle}>B.Sc תזונה קלינית – המכללה האקדמית תל־חי</span>
+              <span className={styles.badgeText}>
+                ידע מדעי וקליני מעמיק על גוף האדם, תזונה ומצבים רפואיים.
+              </span>
             </div>
-
-            <div className={styles.imageSection}>
-              <div className={styles.imagePlaceholder}>
-                <p>תמונה של איתי</p>
-              </div>
-
-              <div className={styles.stats}>
-                <div className={styles.stat}>
-                  <h4>500+</h4>
-                  <p>מטופלים מרוצים</p>
-                </div>
-                <div className={styles.stat}>
-                  <h4>10+</h4>
-                  <p>שנות ניסיון</p>
-                </div>
-                <div className={styles.stat}>
-                  <h4>95%</h4>
-                  <p>שיעור הצלחה</p>
-                </div>
-              </div>
+            <div className={styles.badge}>
+              <span className={styles.badgeTitle}>MAN בריאות הציבור – תזונה, בריאות והתנהגות, אוניברסיטת חיפה</span>
+              <span className={styles.badgeText}>
+                התמקדות בשינוי התנהגותי, קידום בריאות ואורח חיים מאוזן.
+              </span>
+            </div>
+            <div className={styles.badge}>
+              <span className={styles.badgeTitle}>ניסיון קליני</span>
+              <span className={styles.badgeText}>
+                ליווי אישי ומקצועי במרפאות בריאטריות ובקליניקה פרטית,{" "}
+                עם דגש על יחס אנושי ורגישות לצרכים האישיים של כל מטופל.
+              </span>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.mission}>
+      {/* הגישה שלי */}
+      <section className={styles.sectionAlt}>
         <div className={styles.container}>
-          <h2>המשימה שלי</h2>
-          <p>
-            המטרה שלי היא לעזור לכם להגיע לבריאות מיטבית ולהרגיש טוב עם עצמכם.
-            אני כאן כדי ללוות אתכם בכל שלב של הדרך, החל מההכנה לניתוח ברייטרי ועד למעקב ארוך טווח.
-          </p>
-
-          <div className={styles.cta}>
-            <h3>מוכנים להתחיל?</h3>
-            <Link href="/contact" className={styles.ctaButton}>
-              בואו נתחיל יחד
-            </Link>
+          <h2>הגישה שלי</h2>
+          <div className={styles.grid3}>
+            <div className={styles.card}>
+              <h3>הקשבה וקשר אישי</h3>
+              <p>
+                תהליך תזונתי מוצלח מתחיל בהקשבה אמיתית.{" "}
+                אני רואה כל אדם מעבר למספרים – עם סיפור חיים, הרגלים, חששות ומטרות ייחודיות.{" "}
+                יחד אנחנו בונים תהליך שמתאים לאדם ולא להפך.
+              </p>
+            </div>
+            <div className={styles.card}>
+              <h3>איזון ולא שלמות</h3>
+              <p>
+                המטרה אינה "להיות מושלם" אלא ליצור איזון.{" "}
+                אני מאמין שאפשר לאכול טוב, ליהנות ולהרגיש שלמים עם עצמנו בלי אשמה.{" "}
+                התזונה הופכת לכלי של חופש ולא של שליטה.
+              </p>
+            </div>
+            <div className={styles.card}>
+              <h3>שינוי אמיתי</h3>
+              <p>
+                השינוי נבנה בצעדים קטנים, מתוך הבנה, יציבות וחיזוק הביטחון העצמי.{" "}
+                אני מאמין בשיח אמפתי, אמיתי ומכבד — כזה שמאפשר למטופל לקחת אחריות על התהליך ולצמוח מתוכו.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+
+      {/* קריאה לפעולה */}
+      <section className={styles.cta}>
+        <div className={styles.container}>
+          <h2>מוכן/ה לצעד הבא?</h2>
+          <p>נשוחח, נגדיר מטרות, ונבנה תוכנית שמתאימה בדיוק לך.</p>
+          <div className={styles.ctaButtons}>
+            <Link href="/contact" className={styles.primaryButton}>קבע/י פגישה</Link>
+            <Link href="/services" className={styles.secondaryButton}>לשירותים</Link>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
