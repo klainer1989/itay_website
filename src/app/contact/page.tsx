@@ -37,7 +37,6 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitMessage('תודה! ההודעה נשלחה בהצלחה. אחזור אליכם בהקדם.');
@@ -114,18 +113,17 @@ export default function Contact() {
                 <div className={styles.contactIcon}>📍</div>
                 <div>
                   <h3>מיקום</h3>
-                  <p>רחוב הרצל 45, תל אביב</p>
-                  <p>קומה 3, חניה בחינם</p>
+                  <p>אביעזר ילין 5, ראשון לציון</p>
                 </div>
               </div>
 
               <div className={styles.hours}>
                 <h3>שעות פעילות</h3>
                 <div className={styles.hoursGrid}>
-                  <div>ראשון-חמישי:</div>
-                  <div>8:00-20:00</div>
+                  <div>ראשון–חמישי:</div>
+                  <div>8:00–20:00</div>
                   <div>שישי:</div>
-                  <div>8:00-14:00</div>
+                  <div>8:00–14:00</div>
                   <div>שבת:</div>
                   <div>סגור</div>
                 </div>
@@ -183,7 +181,7 @@ export default function Contact() {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label htmlFor="service">השירות המעניין אותכם</label>
+                  <label htmlFor="service">השירות המעניין אתכם</label>
                   <select
                     id="service"
                     name="service"
@@ -225,30 +223,42 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* === MAP SECTION === */}
       <section className={styles.map}>
         <div className={styles.container}>
-          <h2>איך מגיעים אלינו</h2>
-          <div className={styles.mapPlaceholder}>
+          <h2>איך מגיעים אליי</h2>
+
+          <div className={styles.mapCard}>
+            <div className={styles.mapFrame}>
+              <iframe
+                title="מפת הקליניקה"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=%D7%90%D7%91%D7%99%D7%A2%D7%96%D7%A8+%D7%99%D7%9C%D7%99%D7%9F+5,+%D7%A8%D7%90%D7%A9%D7%95%D7%9F+%D7%9C%D7%A6%D7%99%D7%95%D7%9F&output=embed"
+              ></iframe>
+            </div>
+
             <div className={styles.mapContent}>
-              <h3>📍 רחוב הרצל 45, תל אביב</h3>
-              <p>קומה 3, יש חניה בחינם בחצר</p>
-              <p>בקרבת תחבורה ציבורית - אוטובוס קווים 4, 18, 104</p>
+              <h3>📍 אביעזר ילין 5, ראשון לציון</h3>
+              <p>נגיש בתחבורה ציבורית – קווים 4, 18, 104</p>
+
               <div className={styles.mapButtons}>
                 <a
-                  href="https://maps.google.com/?q=הרצל+45+תל+אביב"
+                  className={styles.primaryButton}
+                  href="https://www.google.com/maps/dir/?api=1&destination=%D7%90%D7%91%D7%99%D7%A2%D7%96%D7%A8+%D7%99%D7%9C%D7%99%D7%9F+5,+%D7%A8%D7%90%D7%A9%D7%95%D7%9F+%D7%9C%D7%A6%D7%99%D7%95%D7%9F"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.mapButton}
                 >
-                  פתח ב-Google Maps
+                  ניווט ב־Google Maps
                 </a>
+
                 <a
-                  href="https://waze.com/ul?q=הרצל+45+תל+אביב"
+                  className={styles.secondaryButton}
+                  href="https://waze.com/ul?ll=31.967,34.799&navigate=yes"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.mapButton}
                 >
-                  פתח ב-Waze
+                  ניווט ב־Waze
                 </a>
               </div>
             </div>
