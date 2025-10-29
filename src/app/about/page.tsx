@@ -3,7 +3,7 @@ import styles from "./about.module.css";
 
 export const metadata = {
   title: "אודות | Itay-Nutrition",
-  description: "איתי קליינר – דיאטן קליני לבריאטריה, תזונת ילדים ואורח חיים בריא",
+  description: "איתי קליינר — דיאטן קליני, מאמן כושר ובריאטריה"
 };
 
 export default function AboutPage() {
@@ -14,87 +14,63 @@ export default function AboutPage() {
         <div className={styles.container}>
           <h1>אודות איתי קליינר</h1>
           <p className={styles.subtitle}>
-            אני איתי קליינר – דיאטן קליני (R.D), מלווה מטופלים לפני ואחרי ניתוחים בריאטריים,{" "}
-            אנשים בתהליכי שינוי אורח חיים,{" "}
-            ילדים ובני נוער עם עודף משקל.{" "}
-            הגישה שלי משלבת ידע קליני מעמיק, הקשבה אמיתית, ויחס אישי לאורך כל הדרך.
+            אני איתי קליינר, דיאטן קליני (MAN) ומאמן כושר מוסמך. מגיל צעיר התמודדתי עם עודף משקל ואורח חיים לא מאוזן. 
+            בגיל 22 החלטתי לעשות שינוי משמעותי — ירדתי במשקל, שיפרתי את בריאותי ולמדתי מחדש מהי אכילה מודעת ובריאה.
+            <br /><br />
+            בעקבות השינוי האישי, בחרתי להפוך את התחום למקצוע ולשליחות. 
+            סיימתי תואר ראשון במדעי התזונה במכללה האקדמית תל-חי, שם רכשתי ידע מדעי וקליני מעמיק על גוף האדם, תזונה ומצבים רפואיים. 
+            במקביל הרגשתי שחסר הפן האנושי-רגשי בתהליך, ולכן המשכתי לתואר שני מחקרי בבריאות הציבור – תזונה, בריאות והתנהגות באוניברסיטת חיפה, 
+            כדי להעמיק בהבנת תהליכי שינוי, התנהגות ומוטיבציה.
+            <br /><br />
+            בנוסף, אני מאמן כושר ומאמן ריצות ארוכות, בוגר מכון וינגייט, ומאמין בשילוב שבין תזונה, תנועה ונפש כתשתית לאורח חיים בריא ומאוזן.
+            <br /><br />
+            כיום אני עובד כדיאטן קליני במרפאה הבריאטרית בבית החולים בילינסון ובקופת חולים כללית, 
+            ומלווה מטופלים לפני ואחרי ניתוחים בריאטריים, אנשים המתמודדים עם השמנה, וכן ילדים ובני נוער בתהליכי שינוי.
+            <br /><br />
+            הגישה שלי משלבת ידע מדעי, הקשבה ורגישות אמיתית — מתוך אמונה ששינוי מוצלח מתחיל באדם עצמו ולא רק בתפריט.
           </p>
 
           <div className={styles.heroButtons}>
             <Link href="/contact" className={styles.primaryButton}>צור קשר</Link>
-            <Link href="/services" className={styles.secondaryButton}>לשירותים שלי</Link>
+            <Link href="/services" className={styles.secondaryButton}>השירותים שלי</Link>
           </div>
         </div>
       </section>
 
-      {/* השכלה והתמחויות */}
-      <section className={styles.section}>
+      {/* כרטיסי השכלה והתמחויות */}
+      <section className={styles.educationSection}>
         <div className={styles.container}>
           <h2>השכלה והתמחויות</h2>
-          <div className={styles.badges}>
-            <div className={styles.badge}>
-              <span className={styles.badgeTitle}>B.Sc תזונה קלינית – המכללה האקדמית תל־חי</span>
-              <span className={styles.badgeText}>
-                ידע מדעי וקליני מעמיק על גוף האדם, תזונה ומצבים רפואיים.
-              </span>
+          <div className={styles.educationGrid}>
+            <div className={styles.educationCard}>
+              <h3>🎓 B.Sc תזונה קלינית</h3>
+              <p>המכללה האקדמית תל-חי — לימודי מדעי התזונה, פיזיולוגיה ותהליכים מטבוליים.</p>
             </div>
-            <div className={styles.badge}>
-              <span className={styles.badgeTitle}>MAN בריאות הציבור – תזונה, בריאות והתנהגות, אוניברסיטת חיפה</span>
-              <span className={styles.badgeText}>
-                התמקדות בשינוי התנהגותי, קידום בריאות ואורח חיים מאוזן.
-              </span>
-            </div>
-            <div className={styles.badge}>
-              <span className={styles.badgeTitle}>ניסיון קליני</span>
-              <span className={styles.badgeText}>
-                ליווי אישי ומקצועי במרפאות בריאטריות ובקליניקה פרטית,{" "}
-                עם דגש על יחס אנושי ורגישות לצרכים האישיים של כל מטופל.
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* הגישה שלי */}
-      <section className={styles.sectionAlt}>
-        <div className={styles.container}>
-          <h2>הגישה שלי</h2>
-          <div className={styles.grid3}>
-            <div className={styles.card}>
-              <h3>הקשבה וקשר אישי</h3>
-              <p>
-                תהליך תזונתי מוצלח מתחיל בהקשבה אמיתית.{" "}
-                אני רואה כל אדם מעבר למספרים – עם סיפור חיים, הרגלים, חששות ומטרות ייחודיות.{" "}
-                יחד אנחנו בונים תהליך שמתאים לאדם ולא להפך.
-              </p>
+            <div className={styles.educationCard}>
+              <h3>🎓 M.A.N בריאות הציבור</h3>
+              <p>אוניברסיטת חיפה — התמחות בתזונה, בריאות והתנהגות עם דגש על שינוי הרגלים ותהליכי מוטיבציה.</p>
             </div>
-            <div className={styles.card}>
-              <h3>איזון ולא שלמות</h3>
-              <p>
-                המטרה אינה "להיות מושלם" אלא ליצור איזון.{" "}
-                אני מאמין שאפשר לאכול טוב, ליהנות ולהרגיש שלמים עם עצמנו בלי אשמה.{" "}
-                התזונה הופכת לכלי של חופש ולא של שליטה.
-              </p>
-            </div>
-            <div className={styles.card}>
-              <h3>שינוי אמיתי</h3>
-              <p>
-                השינוי נבנה בצעדים קטנים, מתוך הבנה, יציבות וחיזוק הביטחון העצמי.{" "}
-                אני מאמין בשיח אמפתי, אמיתי ומכבד — כזה שמאפשר למטופל לקחת אחריות על התהליך ולצמוח מתוכו.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* קריאה לפעולה */}
-      <section className={styles.cta}>
-        <div className={styles.container}>
-          <h2>מוכן/ה לצעד הבא?</h2>
-          <p>נשוחח, נגדיר מטרות, ונבנה תוכנית שמתאימה בדיוק לך.</p>
-          <div className={styles.ctaButtons}>
-            <Link href="/contact" className={styles.primaryButton}>קבע/י פגישה</Link>
-            <Link href="/services" className={styles.secondaryButton}>לשירותים</Link>
+            <div className={styles.educationCard}>
+              <h3>🏥 סטאז' קליני בבית החולים בילינסון</h3>
+              <p>התמחות קלינית בתזונה רפואית, ליווי מטופלים במחלקות שונות בדגש על תזונה לאחר ניתוחים מורכבים.</p>
+            </div>
+
+            <div className={styles.educationCard}>
+              <h3>📚 קורס בריאטריה — עמותת עתיד</h3>
+              <p>העמותה הישראלית לדיאטנים ודיאטניות — קורס מקצועי בתחום הניתוחים הבריאטריים וליווי תזונתי ארוך טווח.</p>
+            </div>
+
+            <div className={styles.educationCard}>
+              <h3>🏃‍♂️ מאמן כושר וריצות ארוכות</h3>
+              <p>בוגר מכון וינגייט — בניית תוכניות אימון מותאמות אישית ושילוב פעילות גופנית בתהליכי ירידה במשקל.</p>
+            </div>
+
+            <div className={styles.educationCard}>
+              <h3>🏥 ניסיון קליני</h3>
+              <p>מרפאה בריאטרית בבילינסון ובקופת חולים כללית — ליווי מטופלים לפני ואחרי ניתוחים בריאטריים, טיפול תרופתי וטיפול שמרני לירידה במשקל, טיפול הוליסטי לילדים ונוער עם עודף משקל.</p>
+            </div>
           </div>
         </div>
       </section>
