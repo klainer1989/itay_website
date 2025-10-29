@@ -12,7 +12,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>אודות איתי קליינר</h1>
+          <h1>קצת עליי</h1>
           <p className={styles.subtitle}>
             אני איתי קליינר, דיאטן קליני (R.D) ומאמן כושר מוסמך. מגיל צעיר התמודדתי עם עודף משקל ואורח חיים לא מאוזן. 
             בגיל 22 החלטתי לעשות שינוי משמעותי — ירדתי במשקל, שיפרתי את בריאותי ולמדתי מחדש מהי אכילה מודעת ובריאה.
