@@ -1,25 +1,44 @@
-import { posts } from "@/content/posts";
-import styles from "../blog.module.css";
+// src/app/blog/[slug]/page.tsx
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = posts.find((p) => p.slug === params.slug);
-  if (!post) return <div>הפוסט לא נמצא</div>;
+import styles from "../blog.module.css";
+// חשוב: נתיב יחסי במקום "@/content/posts" כדי להימנע מבעיות alias ב־Vercel
+import { posts } from "../../../content/posts";
+
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+  // marked ב-import דינמי כדי להימנע מתקלות bundling בזמן build
+  const { marked } = await import("marked");
+
+  // נרמול slug מה-URL
+  const wanted = decodeURIComponent(params.slug ?? "").trim().toLowerCase();
+
+  const post = posts.find(
+    (p) => (p.slug ?? "").trim().toLowerCase() === wanted
+  );
+
+  if (!post) {
+    return (
+      <main className={styles.page} dir="rtl">
+        <div className={styles.container}>
+          <h1>הפוסט לא נמצא</h1>
+          <p className={styles.meta}>בדוק/י שהכתובת תקינה: /blog/kids-nutrition</p>
+        </div>
+      </main>
+    );
+  }
+
+  const html = marked.parse(post.content);
 
   return (
     <main className={styles.page} dir="rtl">
       <div className={styles.container}>
         <h1>{post.title}</h1>
         <p className={styles.meta}>
-          {post.category} · {new Date(post.date).toLocaleDateString("he-IL")} ·{" "}
-          {post.readTime}
+          {post.category} · {new Date(post.date).toLocaleDateString("he-IL")} · {post.readTime}
         </p>
-
-        {/* תוכן הפוסט */}
-        <article className={styles.prose}>
-          {post.content.split("\n").map((line, i) =>
-            line.trim() ? <p key={i}>{line}</p> : <br key={i} />
-          )}
-        </article>
+        <article
+          className={styles.prose}
+          dangerouslySetInnerHTML={{ __html: html as string }}
+        />
       </div>
     </main>
   );
