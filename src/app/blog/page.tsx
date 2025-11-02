@@ -1,9 +1,14 @@
+// src/app/blog/page.tsx
+
 import Link from "next/link";
 import styles from "./blog.module.css";
-// נתיב יחסי במקום "@/content/posts"
+// נתיב יחסי נכון: מהתיקייה src/app/blog אל src/content/posts.ts
+import type { Post } from "../../content/posts";
 import { posts } from "../../content/posts";
 
 export default function BlogPage() {
+  const list: Post[] = posts;
+
   return (
     <main className={styles.page} dir="rtl">
       <div className={styles.container}>
@@ -13,7 +18,7 @@ export default function BlogPage() {
         </p>
 
         <div className={styles.grid}>
-          {posts.map((post) => (
+          {list.map((post) => (
             <article key={post.slug} className={styles.card}>
               <h2>
                 <Link href={`/blog/${post.slug}`}>{post.title}</Link>
