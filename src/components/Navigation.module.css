@@ -204,3 +204,60 @@
     margin-bottom: 0;
   }
 }
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 18px;
+  color: #0f172a;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navList {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-bottom: 2px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.navLink:hover {
+  color: #0f172a;
+}
+
+.active {
+  color: #0f172a;
+  border-bottom-color: #14532d; /* ירוק כהה עדין */
+}
+
+/* מובייל: אפשר לשפר בהמשך עם תפריט המבורגר */
+@media (max-width: 720px) {
+  .navList { gap: 12px; }
+  .brand { font-size: 16px; }
+}

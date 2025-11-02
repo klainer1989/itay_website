@@ -4,19 +4,6 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page} dir="rtl">
-      {/* Navbar */}
-      <header className={styles.navbar}>
-        <div className={styles.navContainer}>
-          <Link href="/" className={styles.logo}>Itay-Nutrition</Link>
-          <nav className={styles.navLinks}>
-            <Link href="/">בית</Link>
-            <Link href="/about">אודות</Link>
-            <Link href="/services">שירותים</Link>
-            <Link href="/contact">צור קשר</Link>
-          </nav>
-        </div>
-      </header>
-
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
@@ -31,7 +18,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services (דוגמה קצרה) */}
+      {/* Services */}
       <section className={styles.services}>
         <div className={styles.container}>
           <h2>השירותים שלי</h2>

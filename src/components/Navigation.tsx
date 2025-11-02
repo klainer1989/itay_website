@@ -1,50 +1,46 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import styles from './Navigation.module.css';
 
-export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const items = [
+  { href: '/', label: 'בית' },
+  { href: '/about', label: 'אודות' },
+  { href: '/services', label: 'שירותים' },
+  { href: '/blog', label: 'מאמרים' },
+  { href: '/testimonials', label: 'מטופלים משתפים' }, // עמוד תוסיפ/י בהמשך
+  { href: '/contact', label: 'צור קשר' },
+];
 
-  const menuItems = [
-    { href: '/', label: 'בית', key: 'home' },
-    { href: '/about', label: 'אודות', key: 'about' },
-    { href: '/services', label: 'שירותים', key: 'services' },
-    { href: '/workshops', label: 'סדנאות', key: 'workshops' },
-    { href: '/blog', label: 'בלוג', key: 'blog' },
-    { href: '/contact', label: 'צור קשר', key: 'contact' }
-  ];
+export default function Navigation() {
+  const pathname = usePathname();
 
   return (
-    <nav className={styles.nav}>
+    <header className={styles.header} dir="rtl">
       <div className={styles.container}>
-        <div className={styles.logo}>
-          <Link href="/">איתי - תזונה ובריאטריה</Link>
-        </div>
+        <Link href="/" className={styles.brand}>
+          Itay-Nutrition
+        </Link>
 
-        <button
-          className={styles.menuToggle}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="פתח תפריט"
-        >
-          ☰
-        </button>
-
-        <ul className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ''}`}>
-          {menuItems.map((item) => (
-            <li key={item.key}>
-              <Link
-                href={item.href}
-                className={styles.menuItem}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <nav>
+          <ul className={styles.navList}>
+            {items.map((it) => {
+              const active = pathname === it.href;
+              return (
+                <li key={it.href}>
+                  <Link
+                    href={it.href}
+                    className={`${styles.navLink} ${active ? styles.active : ''}`}
+                  >
+                    {it.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
