@@ -1,19 +1,15 @@
-// src/app/blog/[slug]/page.tsx
-
 import styles from "../blog.module.css";
-// חשוב: נתיב יחסי במקום "@/content/posts" כדי להימנע מבעיות alias ב־Vercel
+// נתיב יחסי במקום "@/content/posts"
 import { posts } from "../../../content/posts";
 
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  // marked ב-import דינמי כדי להימנע מתקלות bundling בזמן build
+  // import דינמי כדי להימנע מתקלות bundling ב־Vercel
   const { marked } = await import("marked");
 
-  // נרמול slug מה-URL
+  // נרמול ה-slug מה-URL
   const wanted = decodeURIComponent(params.slug ?? "").trim().toLowerCase();
 
-  const post = posts.find(
-    (p) => (p.slug ?? "").trim().toLowerCase() === wanted
-  );
+  const post = posts.find((p) => (p.slug ?? "").trim().toLowerCase() === wanted);
 
   if (!post) {
     return (
