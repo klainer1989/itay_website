@@ -150,3 +150,59 @@
   color: var(--gray-600);
   font-size: .95rem;
 }
+/* רקע כללי עדין לעמודי בלוג */
+.page {
+  background: #f8fafc; /* בהיר וקריא */
+  padding-bottom: 48px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 0;
+}
+
+.page h1 {
+  color: #0f172a;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  margin: 12px 0 4px;
+}
+
+.meta {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+/* תוכן המאמר */
+.prose {
+  line-height: 1.85;
+  color: #0b1220;
+  font-size: 1.05rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+  padding: 22px 22px;
+}
+
+.prose p { margin: 0 0 0.9rem 0; }
+
+.prose .separator {
+  height: 1px;
+  background: linear-gradient(90deg,#0000,#9aa5b1,#0000);
+  margin: 1.1rem 0;
+}
+
+.prose strong.subhead {
+  display: block;
+  margin: 1.35rem 0 0.55rem;
+  font-weight: 800;
+  color: #0b1220;
+  font-size: 1.12rem;
+}
+
+@media (max-width: 768px) {
+  .prose { font-size: 1rem; padding: 18px; }
+  .prose strong.subhead { font-size: 1.08rem; }
+}
