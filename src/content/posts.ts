@@ -347,5 +347,76 @@ export const posts: Post[] = [
 6. Preventing and Managing Pre- And Postoperative Micronutrient Deficiencies: A Vital Component of Long-Term Success in Bariatric Surgery. Reytor-González C, Frias-Toral E, Nuñez-Vásquez C, et al. Nutrients. 2025;17(5):741. doi:10.3390/nu17050741.  
 7. Pragmatic Strategy for Vitamin and Micronutrient Supplementation After Metabolic and Bariatric Surgery. Chappard H, Sami O, Sakka I, et al. Surgery for Obesity and Related Diseases : Official Journal of the American Society for Bariatric Surgery. 2025;:S1550-7289(25)00901-3. doi:10.1016/j.soard.2025.08.023.  
 `
+},
+{
+  slug: "kids-healthy-nutrition",
+  title: "תזונה בריאה והרגלי אכילה בילדים – בין הבית, המסגרת והמדיניות הציבורית",
+  excerpt:
+    "תזונה נכונה בילדות מושפעת מדפוסי אכילה, מהסביבה המשפחתית, מהמודל ההורי ומהתערבויות חינוכיות. שילוב של חינוך, נגישות מזון בריא ודוגמה אישית הוא המפתח להצלחה.",
+  date: "2025-11-06",
+  category: "תזונת ילדים",
+  readTime: "9 דקות קריאה",
+  content: `
+### תזונה בריאה והרגלי אכילה בילדים – מה משפיע באמת?
+
+הרגלי האכילה והתזונה של ילדים מתעצבים מתוך שילוב של **דפוסי תזונה, סביבה משפחתית, חיקוי הורי והתערבויות חינוכיות**.  
+תזונה בריאה לילדים כוללת **צריכה קבועה של פירות, ירקות, דגנים מלאים, חלבונים רזים ומוצרי חלב דלי שומן**, תוך צמצום של **סוכרים מוספים, נתרן ומזונות אולטרה־מעובדים**.[1][2][3]  
+הקפדה על **איזון תזונתי ומיקרונוטריינטים חיוניים** – במיוחד ויטמין D, סידן ואשלגן – חשובה להתפתחות ולגדילה, מאחר שחסרים בהם שכיחים בקרב ילדים.[1]  
+
+---
+
+### תפקיד ההורים: הרגלים, חיקוי וסביבה  
+
+**ההורים הם הגורם המרכזי בעיצוב הרגלי האכילה של הילד.**  
+גישות חיוביות כוללות:
+- חשיפה חוזרת למזונות חדשים (8–10 פעמים ואף יותר).  
+- מתן **חופש בחירה** לילדים – מבלי להפעיל לחץ או כפייה.  
+- הימנעות מהאכלה שיפוטית או מגבילה מדי.  
+
+הגישה הזו מעודדת **שליטה פנימית, סקרנות וביטחון סביב אוכל**.[4][5][6]  
+
+האקדמיה האמריקאית לרפואת ילדים מדגישה את חשיבות **הארוחות המשפחתיות**, שנמצאו קשורות ל:
+- צריכת מזון מאוזנת יותר,  
+- משקל גוף תקין יותר,  
+- ומצב רגשי־חברתי טוב יותר בקרב ילדים והורים כאחד.[5]  
+
+כאשר הורים **משמשים דוגמה אישית** לאכילה בריאה ויוצרים **סביבה ביתית תומכת**, הילדים נוטים לבחור במזונות מזינים יותר ולהימנע מצריכת יתר של מזון מעובד.[4][7]  
+
+---
+
+### מוסדות חינוך כגורם משנה מציאות  
+
+מערכת החינוך, ובעיקר מסגרות לגיל הרך ובתי הספר, מהוות **פלטפורמה יעילה לשיפור הרגלי התזונה**.  
+מחקרים מראים כי **התערבויות חינוכיות, תפריטים מאוזנים ושינויים סביבתיים** מובילים לעלייה באיכות התזונה ובצריכת פירות,  
+אם כי ההשפעה על צריכת ירקות ומשקל הגוף (BMI) אינה תמיד עקבית.[8][9]  
+
+בנוסף, **מדיניות ציבורית** ברמה הארצית – כמו רגולציה על פרסום מזון לילדים או **סבסוד מזון בריא** – נמצאה יעילה בהשפעה על הרגלי הצריכה של ילדים בקנה מידה רחב.[10]  
+
+---
+
+### סיכום  
+
+תזונה מיטבית בילדות מושגת באמצעות שילוב של:
+- **נגישות למזון בריא בבית ובמסגרת החינוכית**,  
+- **דוגמה הורית חיובית**,  
+- **ארוחות משפחתיות קבועות**,  
+- ו**מדיניות ציבורית תומכת** שמאפשרת בחירה מושכלת ובריאה.  
+
+הצלחת התהליך תלויה בגישה הוליסטית שמחברת בין **הבית, מערכת החינוך והקהילה** – כך שכל ילד יוכל לגדול בסביבה המעודדת בריאות, מודעות ואיזון תזונתי.[4][1][8][5][10][7][9][6]  
+
+---
+
+### References  
+1. Snacking for a Cause: Nutritional Insufficiencies and Excesses of U.S. Children, a Critical Review of Food Consumption Patterns and Macronutrient and Micronutrient Intake of U.S. Children. Hess J, Slavin J. Nutrients. 2014;6(11):4750-9. doi:10.3390/nu6114750.  
+2. Room for Improvement Remains in Food Consumption Patterns of Young Children Aged 2-4 Years. Welker EB, Jacquier EF, Catellier DJ, Anater AS, Story MT. The Journal of Nutrition. 2018;148(9S):1536S-1546S. doi:10.1093/jn/nxx053.  
+3. Children's Consumption Patterns and Their Parent's Perception of a Healthy Diet. Eliason J, Acciai F, DeWeese RS, Vega-López S, Ohri-Vachaspati P. Nutrients. 2020;12(8):E2322. doi:10.3390/nu12082322.  
+4. Nurturing Children's Healthy Eating: Position Statement. Haines J, Haycraft E, Lytle L, et al. Appetite. 2019;137:124-133. doi:10.1016/j.appet.2019.02.007.  
+5. The Role of the Pediatrician in the Promotion of Healthy, Active Living. Muth ND, Bolling C, Hannon T, Sharifi M. Pediatrics. 2024;153(3):e2023065480. doi:10.1542/peds.2023-065480.  
+6. A Narrative Review of Psychological and Educational Strategies Applied to Young Children's Eating Behaviours Aimed at Reducing Obesity Risk. Gibson EL, Kreichauf S, Wildgruber A, et al. Obesity Reviews : An Official Journal of the International Association for the Study of Obesity. 2012;13 Suppl 1:85-95. doi:10.1111/j.1467-789X.2011.00939.x.  
+7. Factors Influencing Children's Eating Behaviours. Scaglioni S, De Cosmi V, Ciappolino V, et al. Nutrients. 2018;10(6):E706. doi:10.3390/nu10060706.  
+8. Healthy Eating Interventions Delivered in Early Childhood Education and Care Settings for Improving the Diet of Children Aged Six Months to Six Years. Yoong SL, Lum M, Wolfenden L, et al. The Cochrane Database of Systematic Reviews. 2023;8:CD013862. doi:10.1002/14651858.CD013862.pub3.  
+9. Effectiveness of Nutritional Strategies on Improving the Quality of Diet of Children From 6 to 12 Years Old: A Systematic Review. Andueza N, Navas-Carretero S, Cuervo M. Nutrients. 2022;14(2):372. doi:10.3390/nu14020372.  
+10. From Preschool to Policy: A Scoping Review of Recommended Interventions for a Systems Approach to Improve Dietary Intake in Early Childhood. Chan J, Conroy P, Phongsavan P, Raubenheimer D, Allman-Farinelli M. Obesity Reviews : An Official Journal of the International Association for the Study of Obesity. 2025;26(6):e13897. doi:10.1111/obr.13897.  
+`
 }
 ];
