@@ -228,102 +228,7 @@ export const posts: Post[] = [
 <p>כמו שלא הייתם מוותרים על תרופה חשובה, כך גם כאן: נטילה קבועה, מדויקת ומותאמת של תוספים מונעת סיבוכים ושומרת על הבריאות לאורך זמן.</p>
 `
 }, 
-{
-  slug: "bariatric-supplements-essentials",
-  title: "תוספי תזונה אחרי ניתוח בריאטרי – לא המלצה, אלא הכרח בריאותי",
-  excerpt:
-    "הגוף משתנה לאחר הניתוח – וגם הספיגה. אילו תוספים חשוב לקחת, למה, ומה הסיכון באי־נטילה? מדריך קליני מסודר עם דגשים למעקב נכון.",
-  date: "2025-11-05",
-  category: "בריאטריה",
-  readTime: "8 דקות קריאה",
-  content: `
-<p><strong>אחד הנושאים החשובים (והפחות מדוברים) אחרי ניתוח בריאטרי</strong> הוא נטילה קבועה של תוספי תזונה. מטופלים רבים מרגישים מצוין ויורדים יפה במשקל, ומניחים שתוספים הם “המלצה”. בפועל מדובר <strong>בצורך רפואי</strong>: הגוף והספיגה משתנים, והחסר לא תמיד מורגש — עד שמאוחר מדי.</p>
-
-<div class="separator"></div>
-<strong class="subhead">למה צריך תוספים אחרי ניתוח?</strong>
-<ul>
-  <li>נפח הקיבה קטן → אוכלים פחות → מתקבל פחות ויטמינים ומינרלים מהמזון.</li>
-  <li>בחלק מהניתוחים יש גם <strong>ירידה בספיגה במעי הדק</strong>.</li>
-  <li>נפגעת ספיגת מינרלים חיוניים (ברזל, סידן, מגנזיום וכו’).</li>
-</ul>
-<p>לכן, גם תזונה “בריאה” לבדה <strong>אינה מספיקה</strong>.</p>
-
-<strong class="subhead">אילו תוספים חשוב לקחת?</strong>
-<p>ההרכב המדויק משתנה לפי סוג הניתוח והבדיקות, אך לרוב יכלול:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>תוסף</th>
-      <th>למה הוא חשוב?</th>
-      <th>תסמיני חוסר אופייניים</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>מולטי־ויטמין מותאם לבריאטריה</td>
-      <td>כיסוי רחב של ויטמינים ומינרלים</td>
-      <td>עייפות, חיוורון, ירידה בחיסון</td>
-    </tr>
-    <tr>
-      <td>ויטמין B12</td>
-      <td>חיוני למערכת העצבים ולהמטופויזה</td>
-      <td>עייפות, נימולים, קושי בריכוז</td>
-    </tr>
-    <tr>
-      <td>ברזל</td>
-      <td>מניעת אנמיה ושמירה על אנרגיה</td>
-      <td>חולשה, סחרחורות, נשירת שיער</td>
-    </tr>
-    <tr>
-      <td>סידן + ויטמין D</td>
-      <td>בריאות עצם ומניעת דלדול</td>
-      <td>כאבי שרירים/עצמות, ירידה בצפיפות</td>
-    </tr>
-    <tr>
-      <td>ויטמין D</td>
-      <td>ספיגת סידן, חיסון, מצב רוח</td>
-      <td>עייפות, כאבי עצמות, דכדוך</td>
-    </tr>
-    <tr>
-      <td>לעיתים: אבץ / מגנזיום / חומצה פולית</td>
-      <td>בהתאם לבדיקות ולמצב קליני</td>
-      <td>משתנה לפי רכיב</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>חשוב:</strong> לא ליטול תוספים “על דעת עצמכם”. ההתאמה נעשית בליווי מקצועי ועל סמך <strong>בדיקות דם</strong>.</p>
-
-<strong class="subhead">מה הסיכונים באי־נטילת תוספים?</strong>
-<ul>
-  <li><strong>אנמיה</strong> (חסר ברזל/B12) — חולשה, קוצר נשימה, סחרחורות.</li>
-  <li><strong>נשירת שיער</strong> משמעותית ופגיעה באיכות החיים.</li>
-  <li><strong>פגיעה עצבית</strong> — נימולים, חולשה, ירידה בזיכרון/ריכוז.</li>
-  <li><strong>אוסטיאופורוזיס</strong> ודלדול עצם.</li>
-  <li>עייפות קיצונית, ירידה במצב הרוח.</li>
-</ul>
-<p>לעיתים התסמינים מופיעים רק לאחר חודשים — ואז הטיפול ארוך ומורכב יותר.</p>
-
-<strong class="subhead">למה מעקב לא פחות חשוב מנטילה?</strong>
-<ul>
-  <li>בדיקה שהמינונים <strong>תואמים</strong> את הצורך הקליני שלך.</li>
-  <li>ווידוא <strong>ספיגה</strong> (ערכים עולים/יציבים בבדיקות הדם).</li>
-  <li>בדיקת <strong>התנגשויות</strong> בין רכיבים (למשל, עיתוי ברזל לעומת סידן).</li>
-</ul>
-<p>לכן חשוב לבצע <strong>בדיקות דם תקופתיות</strong> וללוות את הנטילה אצל דיאטן/ית קליני/ת המומחה/ית בבריאטריה.</p>
-
-<div class="separator"></div>
-<strong class="subhead">סיכום והמלצות מעשיות</strong>
-<ul>
-  <li>קבעו <strong>פרוטוקול תוספים</strong> אישי לפי סוג הניתוח והבדיקות.</li>
-  <li>שריינו <strong>תזמון חכם</strong> לנטילה (למשל, ברזל בנפרד מסידן; B12 לפי ההמלצה).</li>
-  <li>עקבו אחר <strong>בדיקות דם</strong> והיו בקשר רציף עם הצוות המטפל.</li>
-  <li>זכרו: התוספים הם <strong>חלק מהטיפול הרפואי</strong> — לא “תוספת אופציונלית”.</li>
-</ul>
-<p>כמו שלא הייתם מוותרים על תרופה חשובה, כך גם כאן: נטילה קבועה, מדויקת ומותאמת של תוספים מונעת סיבוכים ושומרת על הבריאות לאורך זמן.</p>
-`
-}, 
+ 
 {
   slug: "bariatric-preoperative-nutrition",
   title: "טיפול תזונתי לפני ניתוח בריאטרי – למה הוא חיוני?",
@@ -371,6 +276,76 @@ export const posts: Post[] = [
 8. Obesity in Adults. Lingvay I, Cohen RV, Roux CWL, Sumithran P. Lancet (London, England). 2024;404(10456):972-987. doi:10.1016/S0140-6736(24)01210-8.  
 9. Preoperative Micronutrient Repletion Strategies in Metabolic and Bariatric Surgery: A Systematic Review. Tang X, Reidlinger DP, Crichton M, et al. Journal of the Academy of Nutrition and Dietetics. 2025;125(6):761-784.e6. doi:10.1016/j.jand.2024.09.007.  
 10. Nutritional Consequences of Bariatric Surgery - Prevention, Detection and Management. O'Kane M. Current Opinion in Gastroenterology. 2021;37(2):135-144. doi:10.1097/MOG.0000000000000707.  
+`
+},
+{
+  slug: "bariatric-supplements-guidelines",
+  title: "תוספי תזונה אחרי ניתוח בריאטרי – לפי ההנחיות העדכניות ביותר",
+  excerpt:
+    "לאחר ניתוח בריאטרי יש צורך בתוספי תזונה קבועים לכל החיים, כדי למנוע חסרים תזונתיים וסיבוכים. אלו ההנחיות המעודכנות של האגודות המקצועיות המובילות בעולם.",
+  date: "2025-11-06",
+  category: "בריאטריה",
+  readTime: "9 דקות קריאה",
+  content: `
+### תוספי תזונה אחרי ניתוח בריאטרי – לא המלצה, אלא הכרח בריאותי  
+
+הקונצנזוס המקצועי העדכני ביותר קובע כי **יש ליטול תוספי תזונה לכל החיים** לאחר ניתוח בריאטרי, כדי **למנוע ולטפל בחסרים תזונתיים**.  
+האגודות הבינלאומיות המובילות – **האגודה האמריקאית לאנדוקרינולוגיה קלינית (AACE)**, **האגודה להשמנה (TOS)** ו־**החברה האמריקאית לניתוחים מטבוליים ובריאטריים (ASMBS)** – ממליצות על תוספי הליבה הבאים למטופלים לאחר ניתוח **Roux-en-Y (RYGB)** ו־**Sleeve Gastrectomy (SG)**:  
+
+- מולטי־ויטמין למבוגרים (שכולל **ברזל, חומצה פולית ותיאמין**)  
+- **סידן (בצורת ציטראט)** – 1200–1500 מ"ג ליום במנות מחולקות  
+- **ויטמין D** – לפחות 3000 יחב"ל ביום, במינון מותאם כך שרמת 25(OH)D תישאר מעל 30 ng/mL  
+- **ויטמין B12** – במתן דרך הפה, תת־לשוני או בהזרקה לפי הצורך לשמירה על רמות תקינות  
+- **ברזל** – 45–60 מ"ג ברזל יסוד ביום, במיוחד לנשים במחזור או למנותחים ב־RYGB או BPD-DS[1][2][3]  
+
+---
+
+### תוספים נוספים לפי צורך אישי  
+
+בהתאם לתוצאות בדיקות הדם ולגורמי הסיכון האישיים, ייתכן צורך בהשלמות נוספות:  
+
+- **חומצה פולית** – 400–800 מיקרוגרם ביום  
+- **אבץ** – 10–16 מ"ג ביום  
+- **נחושת** – 1–2 מ"ג ביום (במיוחד אם נוטלים אבץ באופן קבוע)  
+- **ויטמינים מסיסי שומן** – A, K, E  
+- **תיאמין (B1)** – 12–50 מ"ג ביום, במיוחד באוכלוסיות בסיכון גבוה  
+
+לאחר ניתוחים בעלי מרכיב של תת־ספיגה (כמו **BPD-DS**), ייתכן שיהיה צורך במינונים גבוהים יותר ואף במתן תוך־ורידי.[4]  
+
+---
+
+### צורת נטילה והקפדה על ספיגה  
+בשלב שלאחר הניתוח מומלץ להשתמש **בתוספים ללעיסה או נוזליים**, כדי לשפר את הספיגה.  
+מולטי־ויטמינים ייעודיים לניתוחים בריאטריים עשויים לשפר את ההיענות, אך מחקרים מצאו כי **יעילותם ועלותם דומות** לתוספים רגילים הנלקחים בנפרד.[5]  
+
+---
+
+### מעקב תזונתי קבוע – המפתח לבריאות לאורך זמן  
+מעקב תזונתי ובדיקות דם תקופתיות הם חלק בלתי נפרד מהטיפול לאחר הניתוח.  
+בדיקות אלה מסייעות להתאים מינונים באופן אישי ולמנוע סיבוכים כגון:  
+- **אנמיה**  
+- **אוסטיאופורוזיס ודלדול עצם**  
+- **הפרעות נוירולוגיות**  
+
+המעקב הצמוד מאפשר לזהות חסרים מוקדם, להתאים טיפול ולמנוע הידרדרות במצב הבריאותי.[6][7]  
+
+---
+
+### סיכום  
+לאחר ניתוח בריאטרי, השילוב של **מולטי־ויטמין עם מינרלים**, **סידן ציטראט**, **ויטמין D**, **ברזל** ו־**ויטמין B12** הוא חובה לכל מטופל.  
+תוספים נוספים מותאמים לפי סוג הניתוח, תוצאות המעבדה והמצב הבריאותי האישי.  
+ההנחיות המעודכנות של האגודות הבינלאומיות – **The Obesity Society**, **AACE** ו־**ASMBS** – מדגישות כי תוספים הם לא המלצה, אלא **חלק בלתי נפרד מהטיפול הרפואי ארוך הטווח**.[1][2][3]  
+
+---
+
+### References  
+1. Clinical Practice Guidelines for the Perioperative Nutritional, Metabolic, and Nonsurgical Support of the Bariatric Surgery Patient--2013 Update: Cosponsored by American Association of Clinical Endocrinologists, the Obesity Society, and American Society for Metabolic & Bariatric Surgery. Mechanick JI, Youdim A, Jones DB, et al. Obesity (Silver Spring, Md.). 2013;21 Suppl 1:S1-27. doi:10.1002/oby.20461.  
+2. Optimisation of Follow-Up After Metabolic Surgery. Mingrone G, Bornstein S, Le Roux CW. The Lancet. Diabetes & Endocrinology. 2018;6(6):487-499. doi:10.1016/S2213-8587(17)30434-5.  
+3. Obesity Management in Adults: A Review. Elmaleh-Sachs A, Schwartz JL, Bramante CT, et al. JAMA. 2023;330(20):2000-2015. doi:10.1001/jama.2023.19897.  
+4. Prevention and Treatment of Nutritional Complications After Bariatric Surgery. Nuzzo A, Czernichow S, Hertig A, et al. The Lancet. Gastroenterology & Hepatology. 2021;6(3):238-251. doi:10.1016/S2468-1253(20)30331-9.  
+5. Evaluating the Compliance, Efficacy, and Cost of Formulated Vitamins Versus Separate Supplements in Post-Bariatric Surgery Patients. Wong DH, Kim E, Rim DS, et al. Obesity Surgery. 2023;33(10):3127-3132. doi:10.1007/s11695-023-06802-0.  
+6. Preventing and Managing Pre- And Postoperative Micronutrient Deficiencies: A Vital Component of Long-Term Success in Bariatric Surgery. Reytor-González C, Frias-Toral E, Nuñez-Vásquez C, et al. Nutrients. 2025;17(5):741. doi:10.3390/nu17050741.  
+7. Pragmatic Strategy for Vitamin and Micronutrient Supplementation After Metabolic and Bariatric Surgery. Chappard H, Sami O, Sakka I, et al. Surgery for Obesity and Related Diseases : Official Journal of the American Society for Bariatric Surgery. 2025;:S1550-7289(25)00901-3. doi:10.1016/j.soard.2025.08.023.  
 `
 }
 ];
