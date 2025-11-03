@@ -323,5 +323,54 @@ export const posts: Post[] = [
 </ul>
 <p>כמו שלא הייתם מוותרים על תרופה חשובה, כך גם כאן: נטילה קבועה, מדויקת ומותאמת של תוספים מונעת סיבוכים ושומרת על הבריאות לאורך זמן.</p>
 `
+}, 
+{
+  slug: "bariatric-preoperative-nutrition",
+  title: "טיפול תזונתי לפני ניתוח בריאטרי – למה הוא חיוני?",
+  excerpt:
+    "הטיפול התזונתי לפני ניתוח בריאטרי הוא גורם קריטי בהצלחת הניתוח ובמניעת סיבוכים. כך תיקון חסרים, הערכה מוקדמת והכנה תזונתית תורמים לתוצאה טובה ובטוחה יותר.",
+  date: "2025-11-05",
+  category: "בריאטריה",
+  readTime: "8 דקות קריאה",
+  content: `
+### טיפול תזונתי לפני ניתוח בריאטרי – למה הוא חיוני?
+
+הטיפול התזונתי לפני ניתוח בריאטרי חשוב משום שהוא **משפר את בטיחות הניתוח**, **מפחית סיכונים סביב־ניתוחיים**, ומשפיע באופן משמעותי על **תוצאות ארוכות הטווח**.  
+הערכה והתערבות תזונתית טרום ניתוח נועדו לזהות ולתקן **חסרים תזונתיים שכיחים** – כגון ברזל, ויטמין D, ויטמין B12, חומצה פולית ואחרים – אשר נפוצים בקרב מטופלים עם השמנת יתר חמורה ועלולים לגרום לסיבוכים חמורים לאחר הניתוח אם לא יטופלו מראש.[1][2][3]  
+תיקון החסרים הללו לפני הניתוח מפחית את הסיכון ל**אנמיה לאחר הניתוח**, **דלדול עצם (אוסטיאופורוזיס)** ו**הפרעות נוירולוגיות**.[1][2]  
+
+---
+
+### ייעוץ תזונתי והסתגלות מוקדמת  
+ייעוץ תזונתי לפני הניתוח עוזר למטופלים **להסתגל להרגלי אכילה חדשים** ולהתכונן לשינויים הפיזיולוגיים הצפויים לאחריו.  
+ההכנה הזו משפרת את **ההיענות להנחיות התזונתיות** ומפחיתה סיכונים כגון **תסמונת הצפה (Dumping Syndrome)** ועלייה חוזרת במשקל.[4][6][7]  
+גישה רב־תחומית הכוללת **דיאטנים ואנשי מקצוע נוספים** מומלצת להערכה מקיפה ולהדרכה נכונה של המטופלים.[6][8]  
+
+---
+
+### ניטור ותיקון חסרים תזונתיים  
+מומלץ לבצע **בדיקות דם שגרתיות לפני הניתוח** ולהכין **תוכנית השלמה אישית של תוספי תזונה**, במטרה להפחית את הסיכון לחסרים גם לפני וגם מיד לאחר הניתוח.[9][3]  
+החברות המקצועיות – **האגודה האמריקאית לניתוחים מטבוליים ובריאטריים (ASMBS)** ו־**החברה הבריטית להשמנת יתר וניתוחים מטבוליים (BOMSS)** – ממליצות על **מעקב תזונתי ותוספי תזונה לכל החיים**, כדי למנוע סיבוכים תזונתיים.[10]  
+
+---
+
+### סיכום  
+הטיפול התזונתי לפני ניתוח בריאטרי הוא חלק בלתי נפרד מהצלחת התהליך כולו.  
+הוא נועד **לתקן חסרים**, **להפחית סיכונים ניתוחיים**, ולהכין את המטופלים לשינויים התזונתיים לאחר הניתוח – ובכך לשפר את התוצאות **הקצרות והארוכות טווח**.[4][9][6][5][1][2][3][8][10]  
+
+---
+
+### References  
+1. Preventing and Managing Pre- And Postoperative Micronutrient Deficiencies: A Vital Component of Long-Term Success in Bariatric Surgery. Reytor-González C, Frias-Toral E, Nuñez-Vásquez C, et al. Nutrients. 2025;17(5):741. doi:10.3390/nu17050741.  
+2. Nutrient Deficiencies Prior to Bariatric Surgery. Roust LR, DiBaise JK. Current Opinion in Clinical Nutrition and Metabolic Care. 2017;20(2):138-144. doi:10.1097/MCO.0000000000000352.  
+3. Twelve Key Nutritional Issues in Bariatric Surgery. Thibault R, Huber O, Azagury DE, Pichard C. Clinical Nutrition (Edinburgh, Scotland). 2016;35(1):12-17. doi:10.1016/j.clnu.2015.02.012.  
+4. Preoperative Nutrition in Bariatric Surgery: A Narrative Review on Enhancing Surgical Success and Patient Outcomes. Simancas-Racines D, Frias-Toral E, Campuzano-Donoso M, et al. Nutrients. 2025;17(3):566. doi:10.3390/nu17030566.  
+5. Diet Approach Before and After Bariatric Surgery. Bettini S, Belligoli A, Fabris R, Busetto L. Reviews in Endocrine & Metabolic Disorders. 2020;21(3):297-306. doi:10.1007/s11154-020-09571-8.  
+6. Nutritional Assessment and Preparation for Adult Bariatric Surgery Candidates: Clinical Practice. Sherf-Dagan S, Sinai T, Goldenshluger A, et al. Advances in Nutrition (Bethesda, Md.). 2021;12(3):1020-1031. doi:10.1093/advances/nmaa121.  
+7. Optimizing Nutritional Management Before and After Bariatric Surgery: A Comprehensive Guide for Sustained Weight Loss and Metabolic Health. Frias-Toral E, Chapela S, Gonzalez V, et al. Nutrients. 2025;17(4):688. doi:10.3390/nu17040688.  
+8. Obesity in Adults. Lingvay I, Cohen RV, Roux CWL, Sumithran P. Lancet (London, England). 2024;404(10456):972-987. doi:10.1016/S0140-6736(24)01210-8.  
+9. Preoperative Micronutrient Repletion Strategies in Metabolic and Bariatric Surgery: A Systematic Review. Tang X, Reidlinger DP, Crichton M, et al. Journal of the Academy of Nutrition and Dietetics. 2025;125(6):761-784.e6. doi:10.1016/j.jand.2024.09.007.  
+10. Nutritional Consequences of Bariatric Surgery - Prevention, Detection and Management. O'Kane M. Current Opinion in Gastroenterology. 2021;37(2):135-144. doi:10.1097/MOG.0000000000000707.  
+`
 }
 ];
