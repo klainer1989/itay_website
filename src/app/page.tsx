@@ -9,11 +9,15 @@ export default function Home() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>איתי – תזונה ובריאטריה</h1>
           <p className={styles.heroSubtitle}>
-            ליווי מקצועי ואישי לירידה במשקל, הכנה לניתוח בריאטרי ותזונה בריאה לכל המשפחה.
+            ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי, בשימוש בתרופות לירידה במשקל, ובבניית אורח חיים בריא לכל המשפחה.
           </p>
           <div className={styles.heroButtons}>
-            <Link href="/contact" className={styles.primaryButton}>קבע פגישה עכשיו</Link>
-            <Link href="/about" className={styles.secondaryButton}>למד עוד עליי</Link>
+            <Link href="/contact" className={styles.primaryButton}>
+              קבע פגישה עכשיו
+            </Link>
+            <Link href="/about" className={styles.secondaryButton}>
+              למד עוד עליי
+            </Link>
           </div>
         </div>
       </section>
@@ -25,18 +29,32 @@ export default function Home() {
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
               <h3>בריאטריה</h3>
-              <p className={styles.serviceDescription}>ליווי מקצועי לפני ואחרי ניתוח בריאטרי</p>
-              <Link href="/services" className={styles.serviceButton}>לפרטים</Link>
+              <p className={styles.serviceDescription}>
+                ליווי מקצועי לפני ואחרי ניתוח בריאטרי
+              </p>
+              <Link href="/services" className={styles.serviceButton}>
+                לפרטים
+              </Link>
             </div>
+
             <div className={styles.serviceCard}>
               <h3>תזונת ילדים ונוער</h3>
-              <p className={styles.serviceDescription}>בניית הרגלים ותקשורת מיטיבה בבית</p>
-              <Link href="/services" className={styles.serviceButton}>לפרטים</Link>
+              <p className={styles.serviceDescription}>
+                בניית הרגלים ותקשורת מיטיבה בבית
+              </p>
+              <Link href="/services" className={styles.serviceButton}>
+                לפרטים
+              </Link>
             </div>
+
             <div className={styles.serviceCard}>
               <h3>ליווי אישי אונליין</h3>
-              <p className={styles.serviceDescription}>מעקב נוח, רגיש ומדויק – מרחוק</p>
-              <Link href="/services" className={styles.serviceButton}>לפרטים</Link>
+              <p className={styles.serviceDescription}>
+                מעקב נוח, רגיש ומדויק – מרחוק
+              </p>
+              <Link href="/services" className={styles.serviceButton}>
+                לפרטים
+              </Link>
             </div>
           </div>
         </div>
@@ -48,8 +66,12 @@ export default function Home() {
           <h2>מוכן/ה להתחיל?</h2>
           <p>נבנה תהליך מותאם אישית, רגוע ומדויק – יחד.</p>
           <div className={styles.ctaButtons}>
-            <Link href="/contact" className={styles.primaryButton}>צור קשר</Link>
-            <Link href="/services" className={styles.secondaryButton}>לשירותים</Link>
+            <Link href="/contact" className={styles.primaryButton}>
+              צור קשר
+            </Link>
+            <Link href="/services" className={styles.secondaryButton}>
+              לשירותים
+            </Link>
           </div>
         </div>
       </section>
