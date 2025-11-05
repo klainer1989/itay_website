@@ -9,7 +9,7 @@ export default function Home() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>איתי – תזונה ובריאטריה</h1>
           <p className={styles.heroSubtitle}>
-            ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי, בשימוש בתרופות לירידה במשקל, ובבניית אורח חיים בריא לכל המשפחה.
+            ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי, שימוש בתרופות לירידה במשקל ואורח חיים בריא לכל המשפחה.
           </p>
           <div className={styles.heroButtons}>
             <Link href="/contact" className={styles.primaryButton}>
