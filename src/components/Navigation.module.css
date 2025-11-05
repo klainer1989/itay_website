@@ -1,148 +1,76 @@
-.wrapper {
+/* מעטפת */
+.header {
   position: sticky;
   top: 0;
   z-index: 50;
   background: #ffffff;
   border-bottom: 1px solid #eef2f7;
 }
-
-.container {
-  max-width: 1100px;
+.inner {
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 12px 16px;
+  padding: 14px 18px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
 }
 
-.logo {
+/* מותג */
+.brand {
   font-weight: 800;
-  font-size: 1.125rem;
-  letter-spacing: .2px;
-  color: #0f172a;
+  font-size: 1.25rem;
   text-decoration: none;
+  color: #0f172a;
 }
 
-.navDesktop {
-  display: none;
-  gap: 20px;
-  align-items: center;
+/* כפתור המבורגר (מובייל) */
+.burger {
+  margin-inline-start: auto;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
 }
+.burger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #0f172a;
+}
+@media (min-width: 992px) { .burger { display: none; } }
 
+/* נביגציה */
+.nav { display: none; width: 100%; }
+.open { display: block; }
+
+.list {
+  list-style: none;
+  padding: 10px 0 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.item { position: relative; }
 .link {
-  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0b2545;
+  padding: 10px 12px;
+  border-radius: 10px;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-weight: 700;
-  color: #0b1c2d;
-  text-decoration: none;
-  padding: 8px 10px;
-  border-radius: 10px;
 }
 .link:hover { background: #f3f6fb; }
 
-.dropdown { position: relative; }
-
-.caret {
-  width: 0; height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid #0b1c2d;
-}
-
-.menuClosed {
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: .2s ease;
-}
-
-.menuOpen {
-  position: absolute;
-  right: 0;
-  margin-top: 8px;
-  min-width: 220px;
-  background: #ffffff;
-  border: 1px solid #e5eaf1;
-  border-radius: 12px;
-  box-shadow: 0 8px 28px rgba(16, 24, 40, .08);
-  padding: 8px;
-  display: grid;
-  gap: 4px;
-  opacity: 1;
-  transform: translateY(0);
-  transition: .2s ease;
-  z-index: 60;
-}
-
-.subLink {
-  display: block;
-  padding: 10px 12px;
-  border-radius: 8px;
-  color: #0b1c2d;
-  text-decoration: none;
-  font-weight: 600;
-}
-.subLink:hover { background: #f6faf6; }
-
-/* Burger (mobile) */
-.burger {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 8px;
-  border: none;
-  background: transparent;
-}
-.burger span {
-  width: 22px; height: 2px; background: #0b1c2d; display: block;
-  border-radius: 2px;
-}
-
-/* Mobile drawer */
-.mobileClosed {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .25s ease;
-}
-.mobileOpen {
-  max-height: 70vh;
-  overflow: auto;
-  border-top: 1px solid #eef2f7;
-  background: #ffffff;
-  padding: 8px 16px 16px;
-  display: grid;
-  gap: 4px;
-}
-
-.details summary {
-  list-style: none;
-  cursor: pointer;
-  font-weight: 800;
-  padding: 10px 0;
-}
-.details summary::-webkit-details-marker { display: none; }
-
-.mobileSublist {
-  display: grid;
-  gap: 4px;
-  padding: 6px 0 10px;
-}
-.mobileLink {
-  display: block;
-  padding: 10px 0;
-  color: #0b1c2d;
-  text-decoration: none;
-  font-weight: 700;
-  border-bottom: 1px dashed #eef2f7;
-}
-.mobileLink:last-child { border-bottom: 0; }
-
-/* Breakpoints */
-@media (min-width: 900px) {
-  .burger { display: none; }
-  .navDesktop { display: inline-flex; }
-  .mobileOpen, .mobileClosed { display: none; }
+/* דסקטופ */
+@media (min-width: 992px) {
+  .nav { display: block; width: auto; margin-inline-start: auto; }
+  .list { display: flex; align-items: center; gap: 8px; padding: 0; }
+  .link { padding: 10px 8px; border: none; background: transparent; }
+  .link:hover { background: #f5f7fb; }
 }
