@@ -1,355 +1,269 @@
+/* workshops.module.css */
+
 .page {
   direction: rtl;
-  min-height: 100vh;
+  font-family: "Assistant", sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
 }
 
+/* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #2c7a2c 0%, #4a9d4a 100%);
-  color: white;
-  padding: 80px 0;
   text-align: center;
+  background: linear-gradient(to bottom right, #f8f8f8, #ffffff);
+  padding: 4rem 1rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #1a3c34;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Workshops Grid */
+.workshops {
+  padding: 3rem 1rem;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.subtitle {
-  font-size: 1.3rem;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-.workshops {
-  padding: 80px 0;
-  background: #f8f9fa;
 }
 
 .workshopsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
 .workshopCard {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .workshopCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .workshopHeader {
-  padding: 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.workshopImage {
-  font-size: 3rem;
-  background: white;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.workshopMeta h3 {
-  color: #2c7a2c;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.workshopDescription {
-  color: #666;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.workshopDetails {
-  padding: 1.5rem 2rem;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-}
-
-.detailItem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 0;
-  color: #555;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.detailItem:last-child {
-  border-bottom: none;
-}
-
-.detailItem strong {
-  color: #2c7a2c;
-}
-
-.workshopContent {
-  padding: 2rem;
-  flex-grow: 1;
-}
-
-.workshopContent h4 {
-  color: #2c7a2c;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.topicsList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.topicsList li {
-  padding: 0.4rem 0 0.4rem 1.5rem;
-  color: #555;
-  position: relative;
-  line-height: 1.5;
-}
-
-.topicsList li::before {
-  content: '•';
-  position: absolute;
-  right: 0;
-  color: #2c7a2c;
-  font-weight: bold;
-}
-
-.workshopFooter {
-  padding: 2rem;
-  background: #f8f9fa;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
 
-.price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2c7a2c;
+.workshopImage {
+  font-size: 2.5rem;
 }
 
-.registerButton {
-  background: #2c7a2c;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 50px;
+.workshopMeta h3 {
+  font-size: 1.4rem;
+  color: #1a3c34;
+  margin: 0;
+}
+
+.workshopDescription {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Details */
+.workshopDetails {
+  margin-top: 1rem;
+}
+
+.detailItem {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.detailItem strong {
+  color: #1a3c34;
+}
+
+/* Topics */
+.workshopContent {
+  margin-top: 1rem;
+}
+
+.workshopContent h4 {
+  margin-bottom: 0.5rem;
+  color: #1a3c34;
+  font-size: 1.1rem;
+}
+
+.topicsList {
+  list-style: disc;
+  margin-right: 1.5rem;
+  color: #444;
+}
+
+.topicsList li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+/* New “Info” Button (replaces registration button) */
+.workshopFooter {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.infoButton {
+  display: inline-block;
+  background-color: #2e7d32; /* ירוק כהה אלגנטי */
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
   text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  white-space: nowrap;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
-.registerButton:hover {
-  background: #245a24;
-  transform: translateY(-2px);
+.infoButton:hover {
+  background-color: #256428;
+  transform: scale(1.05);
 }
 
+/* Benefits */
 .benefits {
-  padding: 80px 0;
-  background: white;
+  background: #f5f5f5;
+  padding: 3rem 1rem;
+  text-align: center;
 }
 
 .benefits h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #2c7a2c;
-  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  color: #1a3c34;
+  margin-bottom: 2rem;
 }
 
 .benefitsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
 .benefit {
-  text-align: center;
-  padding: 2rem;
-  background: #f8f9fa;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-}
-
-.benefit:hover {
-  transform: translateY(-5px);
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .benefitIcon {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .benefit h3 {
-  color: #2c7a2c;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
+  color: #1a3c34;
+  margin-bottom: 0.5rem;
 }
 
 .benefit p {
-  color: #666;
-  line-height: 1.6;
+  color: #555;
 }
 
+/* FAQ */
 .faq {
-  padding: 80px 0;
-  background: #f8f9fa;
+  padding: 3rem 1rem;
 }
 
 .faq h2 {
   text-align: center;
-  font-size: 2.5rem;
-  color: #2c7a2c;
-  margin-bottom: 3rem;
+  color: #1a3c34;
+  margin-bottom: 2rem;
 }
 
 .faqList {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .faqItem {
-  background: white;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
 }
 
 .faqItem h3 {
-  background: #2c7a2c;
-  color: white;
-  padding: 1.5rem;
-  margin: 0;
+  color: #1a3c34;
   font-size: 1.1rem;
+  margin-bottom: 0.3rem;
 }
 
-.faqItem p {
-  padding: 1.5rem;
-  margin: 0;
-  color: #555;
-  line-height: 1.6;
-}
-
+/* CTA Section */
 .cta {
-  background: #2c7a2c;
-  color: white;
-  padding: 80px 0;
+  background: linear-gradient(to right, #2e7d32, #388e3c);
+  color: #fff;
   text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .cta h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.cta p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-
 .ctaButtons {
+  margin-top: 1rem;
   display: flex;
-  gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 .primaryButton {
-  background: white;
-  color: #2c7a2c;
-  padding: 15px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  background: #fff;
+  color: #2e7d32;
 }
 
 .primaryButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  background: #f4f4f4;
 }
 
 .secondaryButton {
-  background: transparent;
-  color: white;
-  padding: 15px 30px;
-  border: 2px solid white;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .secondaryButton:hover {
-  background: white;
-  color: #2c7a2c;
+  background: rgba(255, 255, 255, 0.1);
+}
+.whatsappButton {
+  display: inline-block;
+  background-color: #25D366; /* ירוק וואטסאפ */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
-  }
-
-  .workshopsGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .workshopHeader {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .workshopFooter {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .benefitsGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .benefits h2, .faq h2, .cta h2 {
-    font-size: 2rem;
-  }
-
-  .ctaButtons {
-    flex-direction: column;
-    align-items: center;
-  }
+.whatsappButton:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
 }
