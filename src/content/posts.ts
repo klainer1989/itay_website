@@ -418,5 +418,59 @@ export const posts: Post[] = [
 9. Effectiveness of Nutritional Strategies on Improving the Quality of Diet of Children From 6 to 12 Years Old: A Systematic Review. Andueza N, Navas-Carretero S, Cuervo M. Nutrients. 2022;14(2):372. doi:10.3390/nu14020372.  
 10. From Preschool to Policy: A Scoping Review of Recommended Interventions for a Systems Approach to Improve Dietary Intake in Early Childhood. Chan J, Conroy P, Phongsavan P, Raubenheimer D, Allman-Farinelli M. Obesity Reviews : An Official Journal of the International Association for the Study of Obesity. 2025;26(6):e13897. doi:10.1111/obr.13897.  
 `
+},
+{
+  slug: "bariatric-activity-after-surgery",
+  title: "פעילות גופנית לאחר ניתוח בריאטרי – מתי להתחיל וכיצד להתקדם",
+  excerpt:
+    "הנעה מוקדמת והתקדמות הדרגתית מפחיתות סיכונים ומקדמות הצלחה ארוכת טווח אחרי ניתוח בריאטרי. המדריך המעשי לעיתוי, עצימות וסוגי הפעילות – עם דגשים לשימור מסת שריר ומעקב נכון.",
+  date: "2025-11-07",
+  category: "בריאטריה",
+  readTime: "7 דקות קריאה",
+  image: "bariatric-activity.jpg",
+  content: `
+<p><strong>תקציר:</strong> הנעה מוקדמת ופעילות גופנית מבוקרת לאחר ניתוח בריאטרי הן חלק בלתי נפרד מההחלמה ומהצלחת התהליך לטווח ארוך. כאן תמצאו עיתוי מומלץ, עצימות וסוגי פעילות—עם דגשים לשילוב אימוני התנגדות, מניעת ישיבה ממושכת וליווי מקצועי רציף.</p>
+
+<div class="separator"></div>
+<strong class="subhead">הנעה מוקדמת והתקדמות הדרגתית</strong>
+<p>מומלץ להתחיל בהליכות קצרות <strong>בהקדם האפשרי</strong> לאחר הניתוח, ולהגדיל בהדרגה את משך ותדירות ההליכה לאורך החודש הראשון—במקביל להפחתת <strong>זמן ישיבה ממושכת</strong>.[1][2]</p>
+<p>בהמשך, יש להתקדם ל־<strong>150–300 דקות בשבוע</strong> של פעילות אירובית בעצימות מתונה (הליכה מהירה, רכיבה, שחייה). אימונים מובנים ו<strong>אימוני התנגדות</strong> ניתן לשלב <strong>לאחר 4–6 שבועות</strong>. תרגילי בטן/עצימות גבוהה—רצוי לדחות ל־<strong>8–12 שבועות</strong> כדי לאפשר ריפוי רקמות תקין.[1][3]</p>
+
+<strong class="subhead">למה זה חשוב?</strong>
+<ul>
+  <li>ירידה גדולה יותר במסת שומן ובמשקל לאורך זמן.</li>
+  <li>שיפור במדדים מטבוליים ובלחץ הדם.</li>
+  <li>חיזוק שרירים ושיפור בכוח ובכושר.</li>
+  <li>שיפור איכות החיים הכללית.[3][4][5][6][7]</li>
+</ul>
+<p><strong>אימוני התנגדות</strong> חשובים במיוחד לשימור כוח ומניעת אובדן מסת גוף רזה—בפרט בקרב מטופלים צעירים.[3]</p>
+
+<strong class="subhead">ליווי, ניטור וכלים מעשיים</strong>
+<ul>
+  <li>תכנון פעילות מותאם אישית בליווי דיאטן/ית קליני/ת ומדריך/ה מוסמך/ת.[1][8][9]</li>
+  <li>ניטור צעדים/דקות מאמץ (שעון/אפליקציה) מעלה היענות לעומת הנחיות כלליות בלבד.[9]</li>
+  <li>שילוב הדרגתי: אירובי בסיסי ➜ הוספת התנגדות ➜ העלאת עצימות לפי התאוששות והתקדמות.</li>
+</ul>
+
+<strong class="subhead">מה עוד חשוב לדעת?</strong>
+<p>ההמלצות הקיימות נשענות בעיקר על הסכמה מקצועית ומחקרים תצפיתיים; נדרשים מחקרים מבוקרים נוספים כדי לדייק מרשמים לפי סוג ניתוח, גיל ומחלות רקע. יחד עם זאת, גופי מומחים (ACSM) מדגישים: פעילות צריכה להיות <strong>אישית, הדרגתית ומתמשכת</strong> כחלק מהטיפול ארוך הטווח.[2][3]</p>
+
+<div class="separator"></div>
+<p><strong>סיכום:</strong> התחילו מוקדם, התקדמו בהדרגה, שלבו אירובי עם התנגדות, והיעזרו בליווי מקצועי וכלי ניטור. כך תשמרו על התוצאות, תחזקו את הגוף ותבססו אורח חיים בריא ובר־קיימא.</p>
+
+<div class="separator"></div>
+<strong class="subhead">References</strong>
+<p>
+1. Expert-Based Physical Activity Guidelines for Metabolic and Bariatric Surgery Patients: A Systematic Review of Randomized Controlled Trials. Fernández-Alonso M, Bejarano G, Creel DB, et al. <em>Surgery for Obesity and Related Diseases</em>. 2025;21(5):606-614. doi:10.1016/j.soard.2024.11.005.<br>
+2. Exercise/Physical Activity in Individuals With Type 2 Diabetes: A Consensus Statement From the American College of Sports Medicine. Kanaley JA, Colberg SR, Corcoran MH, et al. <em>Med Sci Sports Exerc</em>. 2022;54(2):353-368. doi:10.1249/MSS.0000000000002800.<br>
+3. Physical Activity and Excess Body Weight and Adiposity for Adults. <em>ACSM Consensus Statement</em>.<br>
+4. Association of Increased Physical Activity With Greater Fat Mass Loss Following Metabolic Bariatric Surgery. Jang HN, Park YS, Choi SH, et al. <em>Scientific Reports</em>. 2025;15(1):35305. doi:10.1038/s41598-025-19383-y.<br>
+5. Long-Term Effects of Physical Activity on Weight Loss, Metabolic Parameters and Blood Pressure in Subjects Undergoing Bariatric Surgery: A 5-Year Follow-Up. Moriconi D, Manca L, Rebelos E, et al. <em>Am J Surg</em>. 2024;234:143-149. doi:10.1016/j.amjsurg.2024.04.020.<br>
+6. Bariatric Surgery with Moderate–Intense Physical Activity: Prospective Longitudinal Study. Fontana AD, Lopes AD, Lunardi AC. <em>Obesity Surgery</em>. 2019;29(8):2442-2448. doi:10.1007/s11695-019-03859-8.<br>
+7. Exercise-Based Educational & Motivational Intervention After Surgery. Gallé F, Marte G, Cirella A, et al. <em>PLOS ONE</em>. 2020;15(10):e0241336. doi:10.1371/journal.pone.0241336.<br>
+8. Towards Optimized Care After Bariatric Surgery by Physical Activity and Exercise Intervention: A Review. Hansen D, Decroix L, Devos Y, et al. <em>Obesity Surgery</em>. 2020;30(3):1118-1125. doi:10.1007/s11695-020-04390-x.<br>
+9. A Randomized Trial Comparing Two Interventions to Increase Physical Activity Among Bariatric Patients. Creel DB, Schuh LM, Reed CA, et al. <em>Obesity (Silver Spring)</em>. 2016;24(8):1660-8. doi:10.1002/oby.21548.
+</p>
+`
 }
 ];
