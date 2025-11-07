@@ -6,41 +6,38 @@ export default function Services() {
     {
       id: 'bariatric',
       title: 'בריאטריה',
-      description: 'ליווי מקצועי לפני ואחרי ניתוח ברייטרי',
+      description: 'ליווי מקצועי לפני ואחרי ניתוח בריאטרי',
       icon: '🏥',
       features: [
         'הכנה מקיפה לניתוח',
         'ליווי צמוד אחרי הניתוח',
         'מעקב תזונתי ארוך טווח',
-        'טיפול בסיבוכים תזונתיים'
+        'טיפול בסיבוכים תזונתיים',
       ],
-      
     },
     {
       id: 'preparation',
       title: 'הכנה לניתוח',
-      description: 'תוכנית הכנה מקיפה לניתוח ברייטרי',
+      description: 'תוכנית הכנה מקיפה לניתוח בריאטרי',
       icon: '📋',
       features: [
         'הערכה תזונתית מקיפה',
         'תוכנית הרזיה טרום ניתוח',
         'הכנה נפשית ורגשית',
-        'הדרכה על שינויי אורח חיים'
+        'הדרכה על שינויי אורח חיים',
       ],
-      
     },
     {
       id: 'post-surgery',
       title: 'ליווי אחרי ניתוח',
-      description: 'מעקב וליווי אחרי ניתוח ברייטרי',
+      description: 'מעקב וליווי אחרי ניתוח בריאטרי',
       icon: '🔄',
       features: [
         'מעקב תזונתי שוטף',
         'התאמת תפריט לשלבי ההחלמה',
         'מניעת חוסרים תזונתיים',
-        'ליווי בחזרה לפעילות'
+        'ליווי בחזרה לפעילות',
       ],
-      
     },
     {
       id: 'children',
@@ -51,9 +48,8 @@ export default function Services() {
         'הערכה תזונתית לילדים',
         'תפריטים מותאמים לגיל',
         'הדרכת הורים',
-        'טיפול בהפרעות אכילה'
+        'טיפול בהפרעות אכילה',
       ],
-      
     },
     {
       id: 'weight-loss-meds',
@@ -64,9 +60,20 @@ export default function Services() {
         'הערכה והתאמה לטיפול תרופתי',
         'מעקב תופעות לוואי',
         'התאמת תזונה לטיפול',
-        'ליווי רפואי מתמחה'
+        'ליווי רפואי מתמחה',
       ],
-      
+    },
+    {
+      id: 'metabolic-diseases',
+      title: 'מחלות מטבוליות',
+      description: 'טיפול תזונתי מותאם לסוכרת סוג 2, כבד שומני, כולסטרול ויתר לחץ דם',
+      icon: '🩺',
+      features: [
+        'התאמת תפריט מאוזן לפי מצב רפואי',
+        'שיפור איזון סוכר ולחץ דם',
+        'הפחתת שומנים בדם (כולסטרול וטריגליצרידים)',
+        'הנחיה לבחירת מזונות להפחתת דלקת והיקפים',
+      ],
     },
     {
       id: 'online-coaching',
@@ -77,10 +84,9 @@ export default function Services() {
         'פגישות וידאו אישיות',
         'תכנון תפריטים מותאמים',
         'מעקב יומי דרך אפליקציה',
-        'זמינות לשאלות בווטסאפ'
+        'זמינות לשאלות בוואטסאפ',
       ],
-      
-    }
+    },
   ];
 
   return (
@@ -108,8 +114,6 @@ export default function Services() {
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-
-               
 
                 <Link href="/contact" className={styles.serviceButton}>
                   קבע פגישה
