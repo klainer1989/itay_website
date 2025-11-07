@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 type Card = {
-  id: string;            // שם קובץ בלי סיומת
+  id: string;
   title: string;
   caption: string;
 };
@@ -23,7 +23,10 @@ export default function Patients() {
     <div className={styles.wrap}>
       <header className={styles.header}>
         <h1>מטופלים משתפים</h1>
-        <p>מקבץ עדויות אמיתיות ותודות אמיתיות מהתהליך. לחיצה על כרטיס פותחת תצוגת תמונה, עם חיצים להחלפת תמונות.</p>
+        <p>
+          מקבץ עדויות אמיתיות ותודות אמיתיות מתהליך ליווי תזונתי ובריאטרי.
+          לחיצה על כרטיס פותחת תצוגת תמונה מלאה עם חיצים להחלפת תמונות.
+        </p>
       </header>
 
       <div className={styles.grid}>
@@ -41,7 +44,7 @@ export default function Patients() {
                 fill
                 sizes="(max-width: 768px) 100vw, 25vw"
                 priority={false}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "contain", objectPosition: "center" }}
               />
             </div>
             <div className={styles.meta}>
@@ -52,7 +55,6 @@ export default function Patients() {
         ))}
       </div>
 
-      {/* Lightbox */}
       {openId && (
         <div className={styles.lightbox} role="dialog" aria-modal="true">
           <button
@@ -63,7 +65,6 @@ export default function Patients() {
             ✕
           </button>
 
-          {/* חיצים להחלפה */}
           <button
             className={styles.navLeft}
             onClick={() => {
@@ -87,15 +88,13 @@ export default function Patients() {
             ›
           </button>
 
-          {/* תמונה במסך מלא – object-contain + pinch-zoom נתמך ע״י viewport */}
           <div className={styles.imgWrap} onClick={() => setOpenId(null)}>
             <Image
               src={`/patients/${openId}.png`}
-              alt="תצוגת תמונה מוגדלת"
+              alt={`תצוגת תמונה מוגדלת של ${openId}`}
               fill
               sizes="100vw"
-              // חשוב: objectFit contain שומר על פרופורציות ומאפשר זום טבעי בדפדפן
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "contain", objectPosition: "center" }}
               priority
             />
           </div>
