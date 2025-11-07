@@ -1,3 +1,4 @@
+// src/app/page.tsx
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -9,7 +10,8 @@ export default function Home() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>איתי – תזונה ובריאטריה</h1>
           <p className={styles.heroSubtitle}>
-            ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי, שימוש בתרופות לירידה במשקל ואורח חיים בריא לכל המשפחה.
+            ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי, שימוש בתרופות לירידה במשקל
+            ואורח חיים בריא לכל המשפחה.
           </p>
           <div className={styles.heroButtons}>
             <Link href="/contact" className={styles.primaryButton}>
@@ -27,6 +29,7 @@ export default function Home() {
         <div className={styles.container}>
           <h2>השירותים שלי</h2>
           <div className={styles.servicesGrid}>
+            {/* בריאטריה */}
             <div className={styles.serviceCard}>
               <h3>בריאטריה</h3>
               <p className={styles.serviceDescription}>
@@ -37,6 +40,7 @@ export default function Home() {
               </Link>
             </div>
 
+            {/* תזונת ילדים ונוער */}
             <div className={styles.serviceCard}>
               <h3>תזונת ילדים ונוער</h3>
               <p className={styles.serviceDescription}>
@@ -47,6 +51,18 @@ export default function Home() {
               </Link>
             </div>
 
+            {/* מחלות מטבוליות */}
+            <div className={styles.serviceCard}>
+              <h3>מחלות מטבוליות</h3>
+              <p className={styles.serviceDescription}>
+                טיפול תזונתי לסוכרת סוג 2, כבד שומני, דיסליפידמיה (כולסטרול וטריגליצרידים גבוהים) ויתר לחץ דם
+              </p>
+              <Link href="/services" className={styles.serviceButton}>
+                לפרטים
+              </Link>
+            </div>
+
+            {/* ליווי אישי אונליין */}
             <div className={styles.serviceCard}>
               <h3>ליווי אישי אונליין</h3>
               <p className={styles.serviceDescription}>
