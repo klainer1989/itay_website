@@ -1,0 +1,86 @@
+.fab {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background: #007b55;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.panel {
+  position: fixed;
+  bottom: 5rem;
+  left: 1rem;
+  background: #fff;
+  color: #000;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 260px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: .5rem;
+}
+
+.reset {
+  background: #eee;
+  border: none;
+  border-radius: 6px;
+  padding: .4rem .8rem;
+  cursor: pointer;
+  margin-top: .5rem;
+}
+
+/* === מצבי נגישות לפי החוק === */
+
+/* טקסט מוגדל */
+html.a11y-bigtext { font-size: 120%; }
+
+/* ניגודיות גבוהה */
+html.a11y-contrast {
+  background: #000 !important;
+  color: #fff !important;
+}
+html.a11y-contrast a {
+  color: #00ffff !important;
+  text-decoration: underline;
+}
+
+/* גווני אפור */
+html.a11y-grayscale {
+  filter: grayscale(100%);
+}
+
+/* הדגשת קישורים */
+html.a11y-highlight a {
+  outline: 2px solid #ff0;
+  background-color: #000;
+  color: #ff0 !important;
+}
+
+/* פונט קריא */
+html.a11y-readable {
+  font-family: "Arial", "OpenDyslexic", "Atkinson Hyperlegible", sans-serif !important;
+}
