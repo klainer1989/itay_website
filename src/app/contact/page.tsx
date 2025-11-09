@@ -86,8 +86,8 @@ export default function Contact() {
                 <div className={styles.contactIcon}>📧</div>
                 <div>
                   <h3>אימייל</h3>
-                  <p>klainer.health@gmail.com</p>
-                  <a href="mailto:klainer.health@gmail.com" className={styles.contactLink}>
+                  <p>itay.health@gmail.com</p>
+                  <a href="mailto:itay.health@gmail.com" className={styles.contactLink}>
                     שלח מייל
                   </a>
                 </div>
