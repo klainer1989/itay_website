@@ -11,13 +11,16 @@
   "dependencies": {
     "marked": "^16.4.1",
     "next": "^14.2.0",
+    "nodemailer": "^7.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "resend": "^6.4.2",
     "yet-another-react-lightbox": "^3.25.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.3",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "eslint": "^8.56.0",
