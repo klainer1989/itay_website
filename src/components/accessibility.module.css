@@ -78,37 +78,3 @@ html.a11y-readable{
   .list li{ font-size: .95rem; }
   .reset{ width:100%; text-align:center; }
 }
-/* === מצבי נגישות גלובליים (עובד גם בתוך CSS Module) === */
-
-/* טקסט מוגדל */
-:global(html.a11y-bigtext) {
-  font-size: 120%;
-}
-
-/* ניגודיות גבוהה */
-:global(html.a11y-contrast),
-:global(html.a11y-contrast body) {
-  background: #000 !important;
-  color: #fff !important;
-}
-:global(html.a11y-contrast a) {
-  color: #00ffff !important;
-  text-decoration: underline;
-}
-
-/* גווני אפור */
-:global(html.a11y-grayscale) {
-  filter: grayscale(100%);
-}
-
-/* הדגשת קישורים */
-:global(html.a11y-highlight) a {
-  outline: 2px solid #ff0;
-  background-color: #000;
-  color: #ff0 !important;
-}
-
-/* פונט קריא */
-:global(html.a11y-readable) {
-  font-family: "Arial", "OpenDyslexic", "Atkinson Hyperlegible", sans-serif !important;
-}
