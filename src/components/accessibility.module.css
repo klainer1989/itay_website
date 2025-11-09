@@ -1,86 +1,80 @@
-.fab {
+/* === AccessibilityMenu.module.css (fixed right + mobile safe) === */
+
+/* כפתור פתיחת תפריט נגישות (FAB) */
+.fab{
   position: fixed;
-  bottom: 1rem;
-  left: 1rem;
+  right: 1rem;                          /* בצד ימין */
+  bottom: calc(1rem + 4.25rem);         /* יושב מעל כפתור הוואטסאפ */
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   border: none;
   background: #007b55;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  z-index: 9999;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color:#fff;
+  font-size:1.5rem;
+  cursor:pointer;
+  z-index: 9999;                        /* מעל הכל, אבל לא מסתיר כי מרוחק מהם */
+  box-shadow: 0 4px 10px rgba(0,0,0,.3);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.fab:active{ transform: scale(.98); }
 
-.panel {
+/* חלונית התפריט */
+.panel{
   position: fixed;
-  bottom: 5rem;
-  left: 1rem;
-  background: #fff;
-  color: #000;
-  border-radius: 12px;
-  padding: 1rem;
-  width: 260px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  right: 1rem;                          /* בצד ימין */
+  bottom: calc(1rem + 4.25rem + 3.5rem);/* עוד טיפה מעל הכפתור */
+  background:#fff;
+  color:#000;
+  border-radius:12px;
+  padding:1rem;
+  width:260px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.3);
   z-index: 9999;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: .5rem;
+/* מבנה פנימי */
+.header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:.5rem; }
+.list{ list-style:none; padding:0; margin:0; }
+.list li{ margin-bottom:.5rem; }
+.reset{ background:#eee; border:none; border-radius:6px; padding:.4rem .8rem; cursor:pointer; margin-top:.5rem; }
+
+/* === מצבי נגישות === */
+html.a11y-bigtext{ font-size:120%; }
+
+html.a11y-contrast{ background:#000 !important; color:#fff !important; }
+html.a11y-contrast a{ color:#0ff !important; text-decoration:underline; }
+
+html.a11y-grayscale{ filter:grayscale(100%); }
+
+html.a11y-highlight a{
+  outline:2px solid #ff0;
+  background:#000;
+  color:#ff0 !important;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+html.a11y-readable{
+  font-family:"Arial","OpenDyslexic","Atkinson Hyperlegible",sans-serif !important;
 }
 
-.list li {
-  margin-bottom: .5rem;
-}
-
-.reset {
-  background: #eee;
-  border: none;
-  border-radius: 6px;
-  padding: .4rem .8rem;
-  cursor: pointer;
-  margin-top: .5rem;
-}
-
-/* === מצבי נגישות לפי החוק === */
-
-/* טקסט מוגדל */
-html.a11y-bigtext { font-size: 120%; }
-
-/* ניגודיות גבוהה */
-html.a11y-contrast {
-  background: #000 !important;
-  color: #fff !important;
-}
-html.a11y-contrast a {
-  color: #00ffff !important;
-  text-decoration: underline;
-}
-
-/* גווני אפור */
-html.a11y-grayscale {
-  filter: grayscale(100%);
-}
-
-/* הדגשת קישורים */
-html.a11y-highlight a {
-  outline: 2px solid #ff0;
-  background-color: #000;
-  color: #ff0 !important;
-}
-
-/* פונט קריא */
-html.a11y-readable {
-  font-family: "Arial", "OpenDyslexic", "Atkinson Hyperlegible", sans-serif !important;
+/* === התאמות למסכים קטנים + safe area === */
+@media (max-width: 500px){
+  .fab{
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 4.5rem); /* מעל וואטסאפ + חריץ */
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.3rem;
+  }
+  .panel{
+    right: max(.5rem, env(safe-area-inset-right));
+    left: max(.5rem, env(safe-area-inset-left));    /* שהפאנל יהיה רחב ונוח */
+    bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 4.5rem + 3.2rem);
+    width: auto;
+    padding: .85rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  }
+  .list li{ font-size: .95rem; }
+  .reset{ width:100%; text-align:center; }
 }
