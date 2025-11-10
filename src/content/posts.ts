@@ -42,6 +42,15 @@ export const posts: Post[] = [
 
 <div class="separator"></div>
 <p><strong>סיכום:</strong> ניתוח בריאטרי הוא לא סוף הדרך – הוא רק ההתחלה. עם הכנה נכונה וליווי מותאם אישית, אפשר להפוך את השינוי למציאות יציבה ובריאה לאורך זמן.</p>
+
+<h3>References</h3>
+<ol class="text-left ltr">
+  <li>Obesity in Adults. Lingvay I, Cohen RV, Roux CWL, Sumithran P. <em>Lancet</em>. 2024;404(10456):972-987. doi:10.1016/S0140-6736(24)01210-8.</li>
+  <li>Mechanick JI, Youdim A, Jones DB, et al. <em>Clinical Practice Guidelines...</em> Obesity (Silver Spring). 2013;21 Suppl 1:S1-27. doi:10.1002/oby.20461.</li>
+  <li>O'Kane M. <em>Nutritional Consequences of Bariatric Surgery</em>. <em>Curr Opin Gastroenterol</em>. 2021;37(2):135-144. doi:10.1097/MOG.0000000000000707.</li>
+  <li>Reytor-González C, Frias-Toral E, Nuñez-Vásquez C, et al. <em>Nutrients</em>. 2025;17(5):741. doi:10.3390/nu17050741.</li>
+  <li>Hansen D, Decroix L, Devos Y, et al. <em>Towards Optimized Care After Bariatric Surgery by Physical Activity...</em> <em>Obes Surg</em>. 2020;30(3):1118-1125. doi:10.1007/s11695-020-04390-x.</li>
+</ol>
 `
   },
 
@@ -93,6 +102,14 @@ export const posts: Post[] = [
 
 <div class="separator"></div>
 <p><strong>סיכום:</strong> ההכנה לניתוח בריאטרי היא הליבה של הצלחת התהליך. מי שנכנס לניתוח מתוך הבנה, מוכנות וכלים—יתאושש טוב יותר, ירגיש בטוח יותר וישמר תוצאות לאורך זמן.</p>
+
+<h3>References</h3>
+<ol class="text-left ltr">
+  <li>Preoperative Nutrition in Bariatric Surgery. Simancas-Racines D, Frias-Toral E, Campuzano-Donoso M, et al. <em>Nutrients</em>. 2025;17(3):566. doi:10.3390/nu17030566.</li>
+  <li>Sherf-Dagan S, Sinai T, Goldenshluger A, et al. <em>Nutritional Assessment and Preparation...</em> <em>Adv Nutr</em>. 2021;12(3):1020-1031. doi:10.1093/advances/nmaa121.</li>
+  <li>Tang X, Reidlinger DP, Crichton M, et al. <em>J Acad Nutr Diet</em>. 2025;125(6):761-784.e6. doi:10.1016/j.jand.2024.09.007.</li>
+  <li>Thibault R, Huber O, Azagury DE, Pichard C. <em>Clin Nutr</em>. 2016;35(1):12-17. doi:10.1016/j.clnu.2015.02.012.</li>
+</ol>
 `
   },
 
@@ -129,6 +146,15 @@ export const posts: Post[] = [
 
 <div class="separator"></div>
 <p><strong>סיכום:</strong> ניתוח בריאטרי הוא לא פתרון קסם אלא התחלה של מסע. ליווי מתמשך—תזונתי ורגשי—הוא תנאי אמיתי להצלחה, לבריאות ולשקט נפשי לאורך שנים.</p>
+
+<h3>References</h3>
+<ol class="text-left ltr">
+  <li>Mingrone G, Bornstein S, Le Roux CW. <em>Optimisation of Follow-Up After Metabolic Surgery</em>. <em>Lancet Diabetes Endocrinol</em>. 2018;6(6):487-499. doi:10.1016/S2213-8587(17)30434-5.</li>
+  <li>O'Kane M. <em>Nutritional Consequences of Bariatric Surgery</em>. <em>Curr Opin Gastroenterol</em>. 2021;37(2):135-144. doi:10.1097/MOG.0000000000000707.</li>
+  <li>Reytor-González C, Frias-Toral E, Nuñez-Vásquez C, et al. <em>Nutrients</em>. 2025;17(5):741. doi:10.3390/nu17050741.</li>
+  <li>Nuzzo A, Czernichow S, Hertig A, et al. <em>Prevention and Treatment of Nutritional Complications After Bariatric Surgery</em>. <em>Lancet Gastroenterol Hepatol</em>. 2021;6(3):238-251. doi:10.1016/S2468-1253(20)30331-9.</li>
+  <li>Elmaleh-Sachs A, Schwartz JL, Bramante CT, et al. <em>Obesity Management in Adults</em>. <em>JAMA</em>. 2023;330(20):2000-2015. doi:10.1001/jama.2023.19897.</li>
+</ol>
 `
   },
 
@@ -219,7 +245,7 @@ export const posts: Post[] = [
 <p>לכן חשוב לבצע <strong>בדיקות דם תקופתיות</strong> וללוות את הנטילה אצל דיאטן/ית קליני/ת המומחה/ית בבריאטריה.</p>
 
 <div class="separator"></div>
-<strong class="subhead">סיכום והמלצות מעשיות</strong>
+<p><strong>סיכום והמלצות מעשיות</strong></p>
 <ul>
   <li>קבעו <strong>פרוטוקול תוספים</strong> אישי לפי סוג הניתוח והבדיקות.</li>
   <li>שריינו <strong>תזמון חכם</strong> לנטילה (למשל, ברזל בנפרד מסידן; B12 לפי ההמלצה).</li>
@@ -227,6 +253,15 @@ export const posts: Post[] = [
   <li>זכרו: התוספים הם <strong>חלק מהטיפול הרפואי</strong> — לא “תוספת אופציונלית”.</li>
 </ul>
 <p>כמו שלא הייתם מוותרים על תרופה חשובה, כך גם כאן: נטילה קבועה, מדויקת ומותאמת של תוספים מונעת סיבוכים ושומרת על הבריאות לאורך זמן.</p>
+
+<h3>References</h3>
+<ol class="text-left ltr">
+  <li>Reytor-González C, Frias-Toral E, Nuñez-Vásquez C, et al. <em>Nutrients</em>. 2025;17(5):741. doi:10.3390/nu17050741.</li>
+  <li>O'Kane M. <em>Nutritional Consequences of Bariatric Surgery</em>. <em>Curr Opin Gastroenterol</em>. 2021;37(2):135-144. doi:10.1097/MOG.0000000000000707.</li>
+  <li>Nuzzo A, Czernichow S, Hertig A, et al. <em>Lancet Gastroenterol Hepatol</em>. 2021;6(3):238-251. doi:10.1016/S2468-1253(20)30331-9.</li>
+  <li>Wong DH, Kim E, Rim DS, et al. <em>Obes Surg</em>. 2023;33(10):3127-3132. doi:10.1007/s11695-023-06802-0.</li>
+  <li>Mechanick JI, Youdim A, Jones DB, et al. <em>Clinical Practice Guidelines...</em> Obesity (Silver Spring). 2013;21 Suppl 1:S1-27. doi:10.1002/oby.20461.</li>
+</ol>
 `
   },
 
@@ -260,6 +295,20 @@ export const posts: Post[] = [
 
 <h3>סיכום</h3>
 <p>הטיפול התזונתי לפני ניתוח בריאטרי הוא חלק בלתי נפרד מהצלחת התהליך כולו. הוא נועד <strong>לתקן חסרים</strong>, <strong>להפחית סיכונים ניתוחיים</strong>, ולהכין את המטופלים לשינויים התזונתיים לאחר הניתוח – ובכך לשפר את התוצאות <strong>הקצרות והארוכות טווח</strong>.[4][9][6][5][1][2][3][8][10]</p>
+
+<h3>References</h3>
+<ol class="text-left ltr">
+  <li>Reytor-González C, Frias-Toral E, Nuñez-Vásquez C, et al. <em>Nutrients</em>. 2025;17(5):741. doi:10.3390/nu17050741.</li>
+  <li>Roust LR, DiBaise JK. <em>Curr Opin Clin Nutr Metab Care</em>. 2017;20(2):138-144. doi:10.1097/MCO.0000000000000352.</li>
+  <li>Thibault R, Huber O, Azagury DE, Pichard C. <em>Clin Nutr</em>. 2016;35(1):12-17. doi:10.1016/j.clnu.2015.02.012.</li>
+  <li>Simancas-Racines D, Frias-Toral E, Campuzano-Donoso M, et al. <em>Nutrients</em>. 2025;17(3):566. doi:10.3390/nu17030566.</li>
+  <li>Bettini S, Belligoli A, Fabris R, Busetto L. <em>Rev Endocr Metab Disord</em>. 2020;21(3):297-306. doi:10.1007/s11154-020-09571-8.</li>
+  <li>Sherf-Dagan S, Sinai T, Goldenshluger A, et al. <em>Adv Nutr</em>. 2021;12(3):1020-1031. doi:10.1093/advances/nmaa121.</li>
+  <li>Frias-Toral E, Chapela S, Gonzalez V, et al. <em>Nutrients</em>. 2025;17(4):688. doi:10.3390/nu17040688.</li>
+  <li>Obesity in Adults. Lingvay I, et al. <em>Lancet</em>. 2024;404(10456):972-987. doi:10.1016/S0140-6736(24)01210-8.</li>
+  <li>Tang X, Reidlinger DP, Crichton M, et al. <em>J Acad Nutr Diet</em>. 2025;125(6):761-784.e6. doi:10.1016/j.jand.2024.09.007.</li>
+  <li>O'Kane M. <em>Curr Opin Gastroenterol</em>. 2021;37(2):135-144. doi:10.1097/MOG.0000000000000707.</li>
+</ol>
 `
   },
 
@@ -310,6 +359,17 @@ export const posts: Post[] = [
 
 <h3>סיכום</h3>
 <p>לאחר ניתוח בריאטרי, השילוב של <strong>מולטי־ויטמין עם מינרלים</strong>, <strong>סידן ציטראט</strong>, <strong>ויטמין D</strong>, <strong>ברזל</strong> ו־<strong>ויטמין B12</strong> הוא חובה. תוספים נוספים מותאמים לפי סוג הניתוח וממצאי המעבדה. ההנחיות של <strong>The Obesity Society</strong>, <strong>AACE</strong> ו־<strong>ASMBS</strong> מדגישות שתוספים הם חלק בלתי נפרד מהטיפול ארוך הטווח.</p>
+
+<h3>References</h3>
+<ol class="text-left ltr">
+  <li>Mechanick JI, Youdim A, Jones DB, et al. <em>Clinical Practice Guidelines...</em> Obesity (Silver Spring). 2013;21 Suppl 1:S1-27. doi:10.1002/oby.20461.</li>
+  <li>Mingrone G, Bornstein S, Le Roux CW. <em>Optimisation of Follow-Up After Metabolic Surgery</em>. <em>Lancet Diabetes Endocrinol</em>. 2018;6(6):487-499. doi:10.1016/S2213-8587(17)30434-5.</li>
+  <li>Elmaleh-Sachs A, Schwartz JL, Bramante CT, et al. <em>Obesity Management in Adults</em>. <em>JAMA</em>. 2023;330(20):2000-2015. doi:10.1001/jama.2023.19897.</li>
+  <li>Nuzzo A, Czernichow S, Hertig A, et al. <em>Lancet Gastroenterol Hepatol</em>. 2021;6(3):238-251. doi:10.1016/S2468-1253(20)30331-9.</li>
+  <li>Wong DH, Kim E, Rim DS, et al. <em>Obes Surg</em>. 2023;33(10):3127-3132. doi:10.1007/s11695-023-06802-0.</li>
+  <li>Reytor-González C, Frias-Toral E, Nuñez-Vásquez C, et al. <em>Nutrients</em>. 2025;17(5):741. doi:10.3390/nu17050741.</li>
+  <li>Chappard H, Sami O, Sakka I, et al. <em>SOARD</em>. 2025;S1550-7289(25)00901-3. doi:10.1016/j.soard.2025.08.023.</li>
+</ol>
 `
   },
 
@@ -339,6 +399,20 @@ export const posts: Post[] = [
 
 <h3>סיכום</h3>
 <p>הצלחת תזונת ילדים נשענת על שילוב של <strong>נגישות למזון בריא</strong>, <strong>דוגמה הורית</strong>, <strong>ארוחות משפחתיות</strong> ו<strong>מדיניות ציבורית</strong>. הגישה צריכה להיות הוליסטית—בית, חינוך וקהילה.</p>
+
+<h3>References</h3>
+<ol class="text-left ltr">
+  <li>Hess J, Slavin J. <em>Nutrients</em>. 2014;6(11):4750-9. doi:10.3390/nu6114750.</li>
+  <li>Welker EB, Jacquier EF, Catellier DJ, et al. <em>J Nutr</em>. 2018;148(9S):1536S-1546S. doi:10.1093/jn/nxx053.</li>
+  <li>Eliason J, Acciai F, DeWeese RS, Vega-López S, Ohri-Vachaspati P. <em>Nutrients</em>. 2020;12(8):E2322. doi:10.3390/nu12082322.</li>
+  <li>Haines J, Haycraft E, Lytle L, et al. <em>Appetite</em>. 2019;137:124-133. doi:10.1016/j.appet.2019.02.007.</li>
+  <li>Muth ND, Bolling C, Hannon T, Sharifi M. <em>Pediatrics</em>. 2024;153(3):e2023065480. doi:10.1542/peds.2023-065480.</li>
+  <li>Gibson EL, Kreichauf S, Wildgruber A, et al. <em>Obes Rev</em>. 2012;13 Suppl 1:85-95. doi:10.1111/j.1467-789X.2011.00939.x.</li>
+  <li>Scaglioni S, De Cosmi V, Ciappolino V, et al. <em>Nutrients</em>. 2018;10(6):E706. doi:10.3390/nu10060706.</li>
+  <li>Yoong SL, Lum M, Wolfenden L, et al. <em>Cochrane Database Syst Rev</em>. 2023;8:CD013862. doi:10.1002/14651858.CD013862.pub3.</li>
+  <li>Andueza N, Navas-Carretero S, Cuervo M. <em>Nutrients</em>. 2022;14(2):372. doi:10.3390/nu14020372.</li>
+  <li>Chan J, Conroy P, Phongsavan P, Raubenheimer D, Allman-Farinelli M. <em>Obes Rev</em>. 2025;26(6):e13897. doi:10.1111/obr.13897.</li>
+</ol>
 `
   },
 
@@ -377,10 +451,22 @@ export const posts: Post[] = [
 
 <div class="separator"></div>
 <p><strong>סיכום:</strong> התחילו מוקדם, התקדמו בהדרגה, שלבו אירובי עם התנגדות, והיעזרו בליווי מקצועי וכלי ניטור. כך תשמרו על התוצאות, תחזקו את הגוף ותבססו אורח חיים בריא ובר־קיימא.</p>
+
+<h3>References</h3>
+<ol class="text-left ltr">
+  <li>Fernández-Alonso M, Bejarano G, Creel DB, et al. <em>Surg Obes Relat Dis</em>. 2025;21(5):606-614. doi:10.1016/j.soard.2024.11.005.</li>
+  <li>Kanaley JA, Colberg SR, Corcoran MH, et al. <em>Med Sci Sports Exerc</em>. 2022;54(2):353-368. doi:10.1249/MSS.0000000000002800.</li>
+  <li><em>ACSM Consensus Statement: Physical Activity and Excess Body Weight</em>.</li>
+  <li>Jang HN, Park YS, Choi SH, et al. <em>Sci Rep</em>. 2025;15(1):35305. doi:10.1038/s41598-025-19383-y.</li>
+  <li>Moriconi D, Manca L, Rebelos E, et al. <em>Am J Surg</em>. 2024;234:143-149. doi:10.1016/j.amjsurg.2024.04.020.</li>
+  <li>Fontana AD, Lopes AD, Lunardi AC. <em>Obes Surg</em>. 2019;29(8):2442-2448. doi:10.1007/s11695-019-03859-8.</li>
+  <li>Gallé F, Marte G, Cirella A, et al. <em>PLOS ONE</em>. 2020;15(10):e0241336. doi:10.1371/journal.pone.0241336.</li>
+  <li>Hansen D, Decroix L, Devos Y, et al. <em>Obes Surg</em>. 2020;30(3):1118-1125. doi:10.1007/s11695-020-04390-x.</li>
+  <li>Creel DB, Schuh LM, Reed CA, et al. <em>Obesity (Silver Spring)</em>. 2016;24(8):1660-8. doi:10.1002/oby.21548.</li>
+</ol>
 `
   },
 
-  // NEW: Emotional Eating post (HTML content, references in English kept in content)
   {
     slug: "emotional-eating",
     title: "אכילה רגשית – גורמים, מנגנונים וטיפול מבוסס ראיות",
@@ -408,18 +494,18 @@ export const posts: Post[] = [
 
 <h3>References</h3>
 <ol class="text-left ltr">
-  <li>van Strien T. <em>Causes of Emotional Eating and Matched Treatment of Obesity.</em> Current Diabetes Reports. 2018;18(6):35. doi:10.1007/s11892-018-1000-x.</li>
-  <li>Dakanalis A, Mentzelou M, Papadopoulou SK, et al. <em>The Association of Emotional Eating With Overweight/Obesity, Depression, Anxiety/Stress, and Dietary Patterns: A Review of the Current Clinical Evidence.</em> Nutrients. 2023;15(5):1173. doi:10.3390/nu15051173.</li>
-  <li>Konttinen H. <em>Emotional Eating and Obesity in Adults: The Role of Depression, Sleep and Genes.</em> Proc Nutr Soc. 2020;79(3):283-289. doi:10.1017/S0029665120000166.</li>
-  <li>Wen J, Inauen J, Miao M. <em>Negative Affect and Emotional Eating: Daily Dynamics and Their Links to Difficulties in Emotional Regulation.</em> Appetite. 2025;213:108049. doi:10.1016/j.appet.2025.108049.</li>
-  <li>Treasure J, Bektas S, Mutwalli H, Dhopatkar N, Himmerich H. <em>Novel Approaches to Tackling Emotional Loss of Control of Eating Across the Weight Spectrum.</em> Proc Nutr Soc. 2022;81(3):255-263. doi:10.1017/S0029665122000994.</li>
-  <li>Godet A, Fortier A, Bannier E, Coquery N, Val-Laillet D. <em>Interactions Between Emotions and Eating Behaviors: Neuroimaging and Innovative Strategies.</em> Rev Endocr Metab Disord. 2022;23(4):807-831. doi:10.1007/s11154-021-09700-x.</li>
-  <li>Gibson EL. <em>The Psychobiology of Comfort Eating: Implications for Neuropharmacological Interventions.</em> Behav Pharmacol. 2012;23(5-6):442-60. doi:10.1097/FBP.0b013e328357bd4e.</li>
-  <li>Smith J, Ang XQ, Giles EL, Traviss-Turner G. <em>Emotional Eating Interventions for Adults With Overweight/Obesity: A Systematic Review and Meta-Analysis.</em> IJERPH. 2023;20(3):2722. doi:10.3390/ijerph20032722.</li>
-  <li>Power D, Jones A, Keyworth C, et al. <em>Emotional Eating Interventions in Adults: Meta-Analysis of Behaviour Change Techniques.</em> J Hum Nutr Diet. 2025;38(1):e13410. doi:10.1111/jhn.13410.</li>
-  <li>Kudlek L, Jones RA, Hughes C, et al. <em>Experiences of Emotional Eating in an ACT-Based Weight Management Intervention (SWiM).</em> Appetite. 2024;193:107138. doi:10.1016/j.appet.2023.107138.</li>
-  <li>Juarascio AS, Parker MN, Manasse SM, et al. <em>Emotion Regulation Strategies and Emotional Eating.</em> Appetite. 2020;150:104634. doi:10.1016/j.appet.2020.104634.</li>
-  <li>Annesi JJ, Johnson PH. <em>Mitigating Emotional Eating by Self-Regulatory Skill Use.</em> Appetite. 2020;155:104818. doi:10.1016/j.appet.2020.104818.</li>
+  <li>van Strien T. <em>Causes of Emotional Eating and Matched Treatment of Obesity.</em> <em>Curr Diab Rep</em>. 2018;18(6):35. doi:10.1007/s11892-018-1000-x.</li>
+  <li>Dakanalis A, Mentzelou M, Papadopoulou SK, et al. <em>Nutrients</em>. 2023;15(5):1173. doi:10.3390/nu15051173.</li>
+  <li>Konttinen H. <em>Proc Nutr Soc</em>. 2020;79(3):283-289. doi:10.1017/S0029665120000166.</li>
+  <li>Wen J, Inauen J, Miao M. <em>Appetite</em>. 2025;213:108049. doi:10.1016/j.appet.2025.108049.</li>
+  <li>Treasure J, Bektas S, Mutwalli H, et al. <em>Proc Nutr Soc</em>. 2022;81(3):255-263. doi:10.1017/S0029665122000994.</li>
+  <li>Godet A, Fortier A, Bannier E, et al. <em>Rev Endocr Metab Disord</em>. 2022;23(4):807-831. doi:10.1007/s11154-021-09700-x.</li>
+  <li>Gibson EL. <em>Behav Pharmacol</em>. 2012;23(5-6):442-60. doi:10.1097/FBP.0b013e328357bd4e.</li>
+  <li>Smith J, Ang XQ, Giles EL, Traviss-Turner G. <em>IJERPH</em>. 2023;20(3):2722. doi:10.3390/ijerph20032722.</li>
+  <li>Power D, Jones A, Keyworth C, et al. <em>J Hum Nutr Diet</em>. 2025;38(1):e13410. doi:10.1111/jhn.13410.</li>
+  <li>Kudlek L, Jones RA, Hughes C, et al. <em>Appetite</em>. 2024;193:107138. doi:10.1016/j.appet.2023.107138.</li>
+  <li>Juarascio AS, Parker MN, Manasse SM, et al. <em>Appetite</em>. 2020;150:104634. doi:10.1016/j.appet.2020.104634.</li>
+  <li>Annesi JJ, Johnson PH. <em>Appetite</em>. 2020;155:104818. doi:10.1016/j.appet.2020.104818.</li>
 </ol>
 `
   },
