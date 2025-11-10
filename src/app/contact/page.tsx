@@ -268,3 +268,4 @@ export default function Contact() {
     </div>
   );
 }
+// example client handler inside your Contact component async function onSubmit(e: React.FormEvent<HTMLFormElement>) { e.preventDefault(); const form = e.currentTarget; const payload = { name: (form.elements.namedItem("name") as HTMLInputElement).value, email: (form.elements.namedItem("email") as HTMLInputElement).value, phone: (form.elements.namedItem("phone") as HTMLInputElement).value, message: (form.elements.namedItem("message") as HTMLTextAreaElement).value, }; const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload), }); const data = await res.json(); if (data.ok) { // show your green success box } else { // show an error toast / message } }

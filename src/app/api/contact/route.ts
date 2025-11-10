@@ -1,95 +1,48 @@
 // src/app/api/contact/route.ts
-import type { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export const runtime = "nodejs";          // נדרש ל-nodemailer בוורצל
-export const dynamic = "force-dynamic";   // מבטיח ריצת פונקציה דינמית
-
-type Payload = {
-  name?: string;
-  email?: string;
-  phone?: string;
-  message?: string;
-};
-
-function required(v?: string) {
-  return typeof v === "string" && v.trim().length > 0;
-}
-
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   try {
-    const body: Payload = await req.json();
+    const { name = "", email = "", phone = "", message = "" } = await req.json();
 
-    if (!required(body.name) || !required(body.email) || !required(body.message)) {
-      return new Response(
-        JSON.stringify({ ok: false, error: "Missing required fields (name, email, message)" }),
-        { status: 400, headers: { "Content-Type": "application/json" } }
-      );
+    // very quick guard
+    if (!name || !email || !message) {
+      return NextResponse.json({ ok: false, error: "Missing fields" }, { status: 400 });
     }
 
-    // --- קריאה למשתני סביבה ---
-    const host = process.env.SMTP_HOST!;
-    const port = Number(process.env.SMTP_PORT || "465");
-    const user = process.env.SMTP_USER!;
-    const pass = process.env.SMTP_PASS!;
-    const from = process.env.SMTP_FROM || user; // ברירת מחדל: המשתמש המחובר
-    const to = process.env.SMTP_TO || user;     // ברירת מחדל: שלח לעצמך
-
-    if (!host || !user || !pass) {
-      return new Response(
-        JSON.stringify({ ok: false, error: "SMTP env vars are missing" }),
-        { status: 500, headers: { "Content-Type": "application/json" } }
-      );
-    }
-
-    // --- טרנספורטר של nodemailer ---
+    // transporter from env
     const transporter = nodemailer.createTransport({
-      host,
-      port,
-      secure: port === 465,         // 465 = TLS
-      auth: { user, pass },
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT || 465),
+      secure: Number(process.env.SMTP_PORT || 465) === 465, // 465=true, 587/25=false
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
     });
 
-    // ניתן לאמת חיבור (אופציונלי; טוב לדיבוג לוקאלי)
-    // await transporter.verify();
-
-    const subject = `New contact from ${body.name} (${body.email})`;
-    const text = [
-      `Name: ${body.name}`,
-      `Email: ${body.email}`,
-      body.phone ? `Phone: ${body.phone}` : "",
-      `Message:\n${body.message}`,
-    ]
-      .filter(Boolean)
-      .join("\n");
-
+    // build the email
     const html = `
-      <div style="font-family:Arial,sans-serif;line-height:1.5">
-        <h2 style="margin:0 0 8px">New contact message</h2>
-        <p><strong>Name:</strong> ${body.name}</p>
-        <p><strong>Email:</strong> ${body.email}</p>
-        ${body.phone ? `<p><strong>Phone:</strong> ${body.phone}</p>` : ""}
-        <p style="white-space:pre-wrap;margin-top:12px">${(body.message || "").replace(/</g,"&lt;")}</p>
-      </div>
+      <h2>New message from your website</h2>
+      <p><b>Name:</b> ${name}</p>
+      <p><b>Email:</b> ${email}</p>
+      <p><b>Phone:</b> ${phone}</p>
+      <p><b>Message:</b></p>
+      <pre>${message}</pre>
     `;
 
     const info = await transporter.sendMail({
-      from,
-      to,
-      subject,
-      text,
+      from: process.env.SMTP_FROM,           // e.g. 'Itay Nutrition <itay.health@gmail.com>'
+      to:   process.env.SMTP_TO,             // where you want to receive the mail
+      subject: `Website contact: ${name}`,
+      replyTo: email,
       html,
-      replyTo: body.email, // כך אפשר לענות ישירות לשולח
     });
 
-    return new Response(
-      JSON.stringify({ ok: true, id: info.messageId }),
-      { status: 200, headers: { "Content-Type": "application/json" } }
-    );
+    return NextResponse.json({ ok: true, id: info.messageId });
   } catch (err: any) {
-    return new Response(
-      JSON.stringify({ ok: false, error: err?.message || "Unknown error" }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
-    );
+    console.error("CONTACT API ERROR:", err);
+    return NextResponse.json({ ok: false, error: err?.message || "server error" }, { status: 500 });
   }
 }
