@@ -14,6 +14,7 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const services = [
     'בריאטריה',
@@ -33,21 +34,47 @@ export default function Contact() {
     });
   };
 
+  // ✅ Send real email via /api/contact
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitMessage('');
+    setErrorMessage('');
 
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitMessage('תודה! ההודעה נשלחה בהצלחה. אחזור אליכם בהקדם.');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
+    try {
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: `${formData.service ? `שירות: ${formData.service}\n` : ''}${formData.message}`
+      };
+
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
-    }, 1000);
+
+      const data = await res.json();
+
+      if (res.ok && data.ok) {
+        setSubmitMessage('תודה! ההודעה נשלחה בהצלחה. אחזור אליכם בהקדם.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        throw new Error(data.error || 'שגיאה בשליחה');
+      }
+    } catch (err: any) {
+      console.error('Error submitting form:', err);
+      setErrorMessage('שגיאה בשליחה. נסו שוב מאוחר יותר.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const whatsappMessage = encodeURIComponent(
@@ -134,9 +161,10 @@ export default function Contact() {
               <h2>שלחו לנו הודעה</h2>
 
               {submitMessage && (
-                <div className={styles.successMessage}>
-                  {submitMessage}
-                </div>
+                <div className={styles.successMessage}>{submitMessage}</div>
+              )}
+              {errorMessage && (
+                <div className={styles.errorMessage}>{errorMessage}</div>
               )}
 
               <form onSubmit={handleSubmit}>
@@ -223,18 +251,16 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* === MAP SECTION === */}
       <section className={styles.map}>
         <div className={styles.container}>
           <h2>איך מגיעים אליי</h2>
-
           <div className={styles.mapCard}>
             <div className={styles.mapFrame}>
               <iframe
                 title="מפת הקליניקה"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=%D7%90%D7%91%D7%99%D7%A2%D7%96%D7%A8+%D7%99%D7%9C%D7%99%D7%9F+5,+%D7%A8%D7%90%D7%A9%D7%95%D7%9F+%D7%9C%D7%A6%D7%99%D7%95%D7%9F&output=embed"
+                src="https://www.google.com/maps?q=אביעזר+ילין+5,+ראשון+לציון&output=embed"
               ></iframe>
             </div>
 
@@ -245,13 +271,12 @@ export default function Contact() {
               <div className={styles.mapButtons}>
                 <a
                   className={styles.primaryButton}
-                  href="https://www.google.com/maps/dir/?api=1&destination=%D7%90%D7%91%D7%99%D7%A2%D7%96%D7%A8+%D7%99%D7%9C%D7%99%D7%9F+5,+%D7%A8%D7%90%D7%A9%D7%95%D7%9F+%D7%9C%D7%A6%D7%99%D7%95%D7%9F"
+                  href="https://www.google.com/maps/dir/?api=1&destination=אביעזר+ילין+5,+ראשון+לציון"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   ניווט ב־Google Maps
                 </a>
-
                 <a
                   className={styles.secondaryButton}
                   href="https://waze.com/ul?ll=31.967,34.799&navigate=yes"
@@ -268,4 +293,3 @@ export default function Contact() {
     </div>
   );
 }
-// example client handler inside your Contact component async function onSubmit(e: React.FormEvent<HTMLFormElement>) { e.preventDefault(); const form = e.currentTarget; const payload = { name: (form.elements.namedItem("name") as HTMLInputElement).value, email: (form.elements.namedItem("email") as HTMLInputElement).value, phone: (form.elements.namedItem("phone") as HTMLInputElement).value, message: (form.elements.namedItem("message") as HTMLTextAreaElement).value, }; const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload), }); const data = await res.json(); if (data.ok) { // show your green success box } else { // show an error toast / message } }
