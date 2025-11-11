@@ -9,9 +9,10 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>איתי קליינר – הדרך לשינוי</h1>
-          <p className={styles.heroSubtitle}>תזונה-בריאטריה-אורח חיים
-            ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי, שימוש בתרופות לירידה במשקל
-            ואורח חיים בריא לכל המשפחה.
+          <h2 className={styles.heroSubtitleSmall}>בריאטריה • תזונה • אורח חיים</h2>
+          <p className={styles.heroSubtitle}>
+            ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי,<br />
+            שימוש בתרופות לירידה במשקל ואורח חיים בריא לכל המשפחה.
           </p>
           <div className={styles.heroButtons}>
             <Link href="/contact" className={styles.primaryButton}>

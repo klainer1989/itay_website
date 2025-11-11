@@ -264,3 +264,25 @@
   .heroSubtitle { font-size: 1.05rem; }
   .navLinks { gap: 12px; }
 }
+.heroTitle {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #234f1e;
+  margin-bottom: 0.3rem;
+}
+
+.heroSubtitleSmall {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3f704d;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+  color: #444;
+}
