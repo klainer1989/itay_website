@@ -8,8 +8,8 @@ export default function Home() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>איתי – תזונה ובריאטריה</h1>
-          <p className={styles.heroSubtitle}>
+          <h1 className={styles.heroTitle}>איתי קליינר – הדרך לשינוי</h1>
+          <p className={styles.heroSubtitle}>תזונה-בריאטריה-אורח חיים
             ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי, שימוש בתרופות לירידה במשקל
             ואורח חיים בריא לכל המשפחה.
           </p>
