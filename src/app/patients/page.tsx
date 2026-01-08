@@ -11,7 +11,7 @@ type Card = {
 };
 
 const cards: Card[] = [
-  { id: "elida", title: "אלידה", caption: "ליווי אמפתי ומקצועי לאורך כל הדרך." },
+  { id: "elida", title: "עינת", caption: "ליווי אמפתי ומקצועי לאורך כל הדרך." },
   { id: "hadas", title: "הדס", caption: "שקט, בהירות ודיוק תזונתי." },
   { id: "rotem", title: "רותם", caption: "הישגים שנשמרים לאורך זמן." },
   { id: "inbal", title: "ענבל", caption: "יותר אנרגיה וביטחון." },
