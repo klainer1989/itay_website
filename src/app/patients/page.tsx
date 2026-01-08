@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -14,19 +15,20 @@ const cards: Card[] = [
   { id: "hadas", title: "הדס", caption: "שקט, בהירות ודיוק תזונתי." },
   { id: "rotem", title: "רותם", caption: "הישגים שנשמרים לאורך זמן." },
   { id: "inbal", title: "ענבל", caption: "יותר אנרגיה וביטחון." },
+  { id: "gal", title: "גל", caption: "תהליך משמעותי עם שינוי אמיתי." },
 ];
 
 export default function Patients() {
   const [openId, setOpenId] = useState<string | null>(null);
 
+  const openCard = openId
+    ? cards.find((c) => c.id === openId)
+    : null;
+
   return (
     <div className={styles.wrap}>
       <header className={styles.header}>
         <h1>מטופלים משתפים</h1>
-        <p>
-          מקבץ עדויות אמיתיות ותודות אמיתיות מתהליך ליווי תזונתי ובריאטרי.
-          לחיצה על כרטיס פותחת תצוגת תמונה מלאה עם חיצים להחלפת תמונות.
-        </p>
       </header>
 
       <div className={styles.grid}>
@@ -43,10 +45,10 @@ export default function Patients() {
                 alt={`עדות של ${c.title}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 25vw"
-                priority={false}
                 style={{ objectFit: "contain", objectPosition: "center" }}
               />
             </div>
+
             <div className={styles.meta}>
               <h3>{c.title}</h3>
               <p>{c.caption}</p>
@@ -76,6 +78,7 @@ export default function Patients() {
           >
             ‹
           </button>
+
           <button
             className={styles.navRight}
             onClick={() => {
@@ -91,7 +94,7 @@ export default function Patients() {
           <div className={styles.imgWrap} onClick={() => setOpenId(null)}>
             <Image
               src={`/patients/${openId}.png`}
-              alt={`תצוגת תמונה מוגדלת של ${openId}`}
+              alt={`תצוגת תמונה מוגדלת של ${openCard?.title ?? ""}`}
               fill
               sizes="100vw"
               style={{ objectFit: "contain", objectPosition: "center" }}
