@@ -8,8 +8,26 @@ const Navbar = dynamic(() => import("@/components/Navbar"), { ssr: false });
 const AccessibilityMenu = dynamic(() => import("@/components/AccessibilityMenu"), { ssr: false });
 
 export const metadata: Metadata = {
-  title: "Itay-Nutrition",
-  description: "תזונה קלינית בריאטרית וילדים",
+  metadataBase: new URL("https://klainerhealth.co.il"),
+
+  title: "איתי קליינר | דיאטן קליני ותזונאי בריאטרי",
+
+  description:
+    "איתי קליינר, דיאטן קליני. ייעוץ וליווי תזונתי לירידה במשקל, לפני ואחרי ניתוחים בריאטריים, טיפול בהשמנה ותזונת ילדים.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "איתי קליינר | דיאטן קליני ותזונאי בריאטרי",
+    description:
+      "ייעוץ וליווי תזונתי לירידה במשקל, ניתוחים בריאטריים, טיפול בהשמנה ותזונת ילדים.",
+    url: "https://klainerhealth.co.il",
+    siteName: "איתי קליינר - דיאטן קליני",
+    locale: "he_IL",
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
