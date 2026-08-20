@@ -1,9 +1,21 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./about.module.css";
 
-export const metadata = {
-  title: "אודות | Itay-Nutrition",
-  description: "איתי קליינר — דיאטן קליני, מאמן כושר ובריאטריה"
+export const metadata: Metadata = {
+  title: "אודות איתי קליינר | דיאטן קליני ותזונאי בריאטרי",
+  description:
+    "הכירו את איתי קליינר, דיאטן קליני ומאמן כושר, בעל ניסיון בליווי תזונתי לפני ואחרי ניתוחים בריאטריים, טיפול בהשמנה, תזונת ילדים ושינוי אורח חיים.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "אודות איתי קליינר | דיאטן קליני ותזונאי בריאטרי",
+    description:
+      "דיאטן קליני ומאמן כושר עם ניסיון בתזונה בריאטרית, טיפול בהשמנה, תזונת ילדים וליווי לשינוי אורח חיים.",
+    url: "https://klainerhealth.co.il/about",
+    type: "profile",
+  },
 };
 
 export default function AboutPage() {
