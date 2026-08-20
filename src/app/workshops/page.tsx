@@ -1,5 +1,22 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./workshops.module.css";
+
+export const metadata: Metadata = {
+  title: "סדנאות בריאטריות וליווי קבוצתי | איתי קליינר",
+  description:
+    "סדנאות הכנה לניתוח בריאטרי, ליווי לאחר ניתוח ושימור תוצאות עם איתי קליינר, דיאטן קליני. כלים מעשיים, תמיכה קבוצתית וליווי מקצועי לאורך התהליך.",
+  alternates: {
+    canonical: "/workshops",
+  },
+  openGraph: {
+    title: "סדנאות בריאטריות וליווי קבוצתי | איתי קליינר",
+    description:
+      "סדנאות קבוצתיות להכנה לניתוח בריאטרי, ליווי לאחר ניתוח ושימור תוצאות.",
+    url: "https://klainerhealth.co.il/workshops",
+    type: "website",
+  },
+};
 
 export default function Workshops() {
   const workshops = [
