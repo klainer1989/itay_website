@@ -1,6 +1,22 @@
-import Link from 'next/link';
-import styles from './services.module.css';
+import type { Metadata } from "next";
+import Link from "next/link";
+import styles from "./services.module.css";
 
+export const metadata: Metadata = {
+  title: "תזונאי בריאטרי וליווי לירידה במשקל | איתי קליינר",
+  description:
+    "ליווי תזונתי מקצועי לפני ואחרי ניתוחים בריאטריים, טיפול בהשמנה, תרופות להרזיה, תזונת ילדים, מחלות מטבוליות וליווי אונליין.",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "תזונאי בריאטרי וליווי לירידה במשקל | איתי קליינר",
+    description:
+      "ליווי תזונתי מקצועי לפני ואחרי ניתוחים בריאטריים, טיפול בהשמנה, תרופות להרזיה, תזונת ילדים ומחלות מטבוליות.",
+    url: "https://klainerhealth.co.il/services",
+    type: "website",
+  },
+};
 export default function Services() {
   const services = [
     {
