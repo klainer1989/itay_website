@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header className={styles.header} dir="rtl">
       <div className={styles.inner}>
-        <Link href="/" className={styles.logo}>Itay-Nutrition</Link>
+        <Link href="/" className={styles.logo}>איתי קליינר</Link>
 
         <nav className={styles.navDesktop} aria-label="ניווט ראשי">
           {links.map((l) => (
