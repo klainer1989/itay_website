@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./navbar.module.css";
@@ -18,36 +19,53 @@ export default function Navbar() {
   return (
     <header className={styles.header} dir="rtl">
       <div className={styles.inner}>
-        <Link href="/" className={styles.logo}>איתי קליינר</Link>
 
+        {/* מותג */}
+        <Link href="/" className={styles.brand}>
+          <span className={styles.brandName}>איתי קליינר</span>
+
+          <span className={styles.brandTagline}>
+            דיאטן קליני | השמנה ובריאטריה | ילדים ונוער | אכילה רגשית
+          </span>
+        </Link>
+
+        {/* תפריט מחשב */}
         <nav className={styles.navDesktop} aria-label="ניווט ראשי">
-          {links.map((l) => (
-            <Link key={l.href} href={l.href} className={styles.navLink}>
-              {l.label}
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={styles.navLink}
+            >
+              {link.label}
             </Link>
           ))}
         </nav>
 
+        {/* כפתור תפריט במובייל */}
         <button
+          type="button"
           className={styles.burger}
-          aria-label="פתח תפריט"
+          aria-label={open ? "סגור תפריט" : "פתח תפריט"}
           aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
+          onClick={() => setOpen((value) => !value)}
         >
           ☰
         </button>
+
       </div>
 
+      {/* תפריט מובייל */}
       {open && (
         <nav className={styles.navMobile} aria-label="תפריט נייד">
-          {links.map((l) => (
+          {links.map((link) => (
             <Link
-              key={l.href}
-              href={l.href}
+              key={link.href}
+              href={link.href}
               className={styles.mobileLink}
               onClick={() => setOpen(false)}
             >
-              {l.label}
+              {link.label}
             </Link>
           ))}
         </nav>

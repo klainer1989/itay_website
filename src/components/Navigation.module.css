@@ -1,76 +1,113 @@
-/* מעטפת */
 .header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #ffffff;
-  border-bottom: 1px solid #eef2f7;
+  background: red !important;
+  border-bottom: 1px solid #e8edf0;
 }
+
 .inner {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 14px 18px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+max-width: 1240px;
+margin: 0 auto;
+padding: 14px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 32px;
 }
 
-/* מותג */
 .brand {
-  font-weight: 800;
-  font-size: 1.25rem;
-  text-decoration: none;
-  color: #0f172a;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+text-decoration: none !important;
+color: #173247;
+flex-shrink: 0;
 }
 
-/* כפתור המבורגר (מובייל) */
+.brandName {
+display: block;
+font-size: 1.35rem;
+font-weight: 800;
+line-height: 1.15;
+color: #173247;
+text-decoration: none !important;
+}
+
+.brandTagline {
+display: block;
+font-size: 0.78rem;
+font-weight: 500;
+line-height: 1.35;
+color: #657581;
+white-space: nowrap;
+text-decoration: none !important;
+}
+
+.navDesktop {
+display: none;
+align-items: center;
+gap: 26px;
+}
+
+.navLink {
+color: #173247;
+font-weight: 700;
+text-decoration: none !important;
+}
+
+.navLink:hover {
+color: #4a7d3a;
+}
+
 .burger {
-  margin-inline-start: auto;
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  gap: 4px;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  background: #fff;
-  cursor: pointer;
+font-size: 22px;
+background: #173247;
+color: white;
+border: none;
+border-radius: 10px;
+padding: 7px 11px;
+cursor: pointer;
 }
-.burger span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  background: #0f172a;
-}
-@media (min-width: 992px) { .burger { display: none; } }
 
-/* נביגציה */
-.nav { display: none; width: 100%; }
-.open { display: block; }
-
-.list {
-  list-style: none;
-  padding: 10px 0 0;
-  margin: 0;
-  display: grid;
-  gap: 10px;
+.navMobile {
+display: grid;
+gap: 8px;
+padding: 10px 16px 16px;
+border-top: 1px solid #e8edf0;
+background: white;
 }
-.item { position: relative; }
-.link {
-  font-weight: 700;
-  text-decoration: none;
-  color: #0b2545;
-  padding: 10px 12px;
-  border-radius: 10px;
-  display: inline-flex;
-  align-items: center;
-}
-.link:hover { background: #f3f6fb; }
 
-/* דסקטופ */
-@media (min-width: 992px) {
-  .nav { display: block; width: auto; margin-inline-start: auto; }
-  .list { display: flex; align-items: center; gap: 8px; padding: 0; }
-  .link { padding: 10px 8px; border: none; background: transparent; }
-  .link:hover { background: #f5f7fb; }
+.mobileLink {
+padding: 11px 10px;
+border-radius: 10px;
+background: #f7faf8;
+color: #173247;
+font-weight: 700;
+text-decoration: none !important;
+}
+
+@media (max-width: 899px) {
+.brandTagline {
+display: none;
+}
+
+.brandName {
+font-size: 1.2rem;
+}
+}
+
+@media (min-width: 900px) {
+.navDesktop {
+display: flex;
+}
+
+.burger {
+display: none;
+}
+
+.navMobile {
+display: none;
+}
 }
