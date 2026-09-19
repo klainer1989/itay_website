@@ -1,37 +1,30 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
+import { posts } from "../content/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.klainerhealth.co.il'
+  const baseUrl = "https://www.klainerhealth.co.il";
 
   const staticPages = [
-    '',
-    '/about',
-    '/services',
-    '/patients',
-    '/workshops',
-    '/contact',
-    '/blog',
+    "",
+    "/about",
+    "/services",
+    "/patients",
+    "/workshops",
+    "/contact",
+    "/blog",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: path === '' ? 1 : 0.8,
-  }))
+    changeFrequency: "weekly" as const,
+    priority: path === "" ? 1 : 0.8,
+  }));
 
-  const blogPosts = [
-    'bariatric-five-things',
-    'bariatric-preparation-importance',
-    'bariatric-post-surgery-followup',
-    'bariatric-supplements-essentials',
-    'bariatric-preoperative-nutrition',
-    'emotional-eating',
-    'esg-review',
-  ].map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
+  const blogPosts = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
     priority: 0.7,
-  }))
+  }));
 
-  return [...staticPages, ...blogPosts]
+  return [...staticPages, ...blogPosts];
 }
