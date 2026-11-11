@@ -10,13 +10,19 @@ type Card = {
   caption: string;
 };
 
+
+
 const cards: Card[] = [
   { id: "einat", title: "עינת", caption: "ליווי אמפתי ומקצועי לאורך כל הדרך." },
   { id: "hadas", title: "הדס", caption: "שקט, בהירות ודיוק תזונתי." },
   { id: "rotem", title: "רותם", caption: "הישגים שנשמרים לאורך זמן." },
   { id: "inbal", title: "ענבל", caption: "יותר אנרגיה וביטחון." },
   { id: "gal", title: "גל", caption: "תהליך משמעותי עם שינוי אמיתי." },
+  { id: "orit", title: "אורית", caption: "ביקורת Google – 5 כוכבים" },
+  { id: "zohara", title: "זוהרה", caption: "ביקורת Google – 5 כוכבים" },
 ];
+
+
 
 export default function Patients() {
   const [openId, setOpenId] = useState<string | null>(null);
