@@ -1,108 +1,188 @@
 // src/app/page.tsx
+
 import Link from "next/link";
 import styles from "./page.module.css";
 
+const services = [
+  {
+    icon: "♡",
+    title: "בריאטריה",
+    description:
+      "הכנה לניתוח בריאטרי וליווי תזונתי מקצועי לאחר הניתוח.",
+    href: "/services",
+  },
+  {
+    icon: "♧",
+    title: "תזונת תינוקות",
+    description:
+      "ליווי הורים בהזנת תינוקות, הנקה, תמ״ל, התחלת מזונות משלימים וקשיי האכלה.",
+    href: "/services",
+  },
+  {
+    icon: "♧",
+    title: "תזונת ילדים ונוער",
+    description:
+      "ליווי תזונתי לילדים ומתבגרים, בניית הרגלים בריאים בגישה משפחתית.",
+    href: "/services",
+  },
+  {
+    icon: "✚",
+    title: "מחלות מטבוליות",
+    description:
+      "טיפול תזונתי בסוכרת, כבד שומני, כולסטרול, טריגליצרידים ולחץ דם.",
+    href: "/services",
+  },
+  {
+    icon: "◎",
+    title: "טיפול בהשמנה",
+    description:
+      "ליווי תזונתי אישי לירידה במשקל, כולל במהלך טיפול תרופתי.",
+    href: "/services",
+  },
+  {
+    icon: "⌂",
+    title: "משפחה בריאה",
+    description:
+      "תוכנית ליווי משפחתית לשיפור הרגלי התזונה ואורח החיים.",
+    href: "/services",
+  },
+  {
+    icon: "✧",
+    title: "תזונה בגיל השלישי",
+    description:
+      "התאמת התזונה לצרכים הבריאותיים המשתנים עם הגיל.",
+    href: "/services",
+  },
+  {
+    icon: "☆",
+    title: "סדנאות וקבוצות",
+    description:
+      "סדנאות וקבוצות ליווי לתמיכה, למידה ושינוי הרגלים לאורך זמן.",
+    href: "/workshops",
+  },
+];
+
 export default function Home() {
   return (
-    <div className={styles.page} dir="rtl">
-      {/* Hero */}
+    <main className={styles.main} dir="rtl">
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>איתי קליינר – הדרך לשינוי</h1>
-          <h2 className={styles.heroSubtitleSmall}>בריאטריה • תזונה • אורח חיים</h2>
-          <p className={styles.heroSubtitle}>
-            ליווי מקצועי ואישי לשינוי אמיתי – לפני ואחרי ניתוח בריאטרי,<br />
-            שימוש בתרופות לירידה במשקל ואורח חיים בריא לכל המשפחה.
+          <span className={styles.eyebrow}>
+            תזונה קלינית • בריאטריה • אורח חיים בריא
+          </span>
+
+          <h1 className={styles.heroTitle}>
+            איתי קליינר
+            <span>דיאטן קליני</span>
+          </h1>
+
+          <h2 className={styles.heroSubtitle}>
+            תזונה מקצועית. גישה אישית.
+            <br />
+            שינוי לאורך זמן.
+          </h2>
+
+          <p className={styles.heroDescription}>
+            ליווי תזונתי מבוסס מדע, המותאם לצרכים,
+            למטרות ולאורח החיים שלך.
+            <br />
+            בריאטריה, טיפול בהשמנה, תזונת תינוקות,
+            ילדים ונוער, מחלות מטבוליות והגיל השלישי.
           </p>
+
           <div className={styles.heroButtons}>
-            <Link href="/contact" className={styles.primaryButton}>
-              קבע פגישה עכשיו
+            <Link
+              href="/contact"
+              className={styles.primaryButton}
+            >
+              קביעת פגישה
             </Link>
-            <Link href="/about" className={styles.secondaryButton}>
-              למד עוד עליי
+
+            <Link
+              href="/about"
+              className={styles.secondaryButton}
+            >
+              קצת עליי
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section className={styles.services}>
-        <div className={styles.container}>
-          <h2>השירותים שלי</h2>
-          <div className={styles.servicesGrid}>
-            {/* בריאטריה */}
-            <div className={styles.serviceCard}>
-              <h3>בריאטריה</h3>
-              <p className={styles.serviceDescription}>
-                ליווי מקצועי לפני ואחרי ניתוח בריאטרי
-              </p>
-              <Link href="/services" className={styles.serviceButton}>
-                לפרטים
-              </Link>
-            </div>
+      <section className={styles.services} id="services">
+        <div className={styles.sectionHeading}>
+          <span className={styles.sectionEyebrow}>
+            תחומי התמחות
+          </span>
 
-            {/* תזונת ילדים ונוער */}
-            <div className={styles.serviceCard}>
-              <h3>תזונת ילדים ונוער</h3>
-              <p className={styles.serviceDescription}>
-                בניית הרגלים ותקשורת מיטיבה בבית
-              </p>
-              <Link href="/services" className={styles.serviceButton}>
-                לפרטים
-              </Link>
-            </div>
+          <h2>תחומי הטיפול שלי</h2>
 
-            {/* מחלות מטבוליות */}
-            <div className={styles.serviceCard}>
-              <h3>מחלות מטבוליות</h3>
-              <p className={styles.serviceDescription}>
-                טיפול תזונתי לסוכרת סוג 2, כבד שומני, דיסליפידמיה (כולסטרול וטריגליצרידים גבוהים) ויתר לחץ דם
-              </p>
-              <Link href="/services" className={styles.serviceButton}>
-                לפרטים
-              </Link>
-            </div>
+          <p>
+            ליווי מקצועי ואישי המותאם לכל שלב בחיים
+          </p>
+        </div>
 
-            {/* ליווי אישי אונליין */}
-            <div className={styles.serviceCard}>
-              <h3>ליווי אישי אונליין</h3>
-              <p className={styles.serviceDescription}>
-                מעקב נוח, רגיש ומדויק – מרחוק
-              </p>
-              <Link href="/services" className={styles.serviceButton}>
-                לפרטים
+        <div className={styles.servicesGrid}>
+          {services.map((service) => (
+            <article
+              className={styles.serviceCard}
+              key={service.title}
+            >
+              <div
+                className={styles.serviceIcon}
+                aria-hidden="true"
+              >
+                {service.icon}
+              </div>
+
+              <h3>{service.title}</h3>
+
+              <p>{service.description}</p>
+
+              <Link
+                href={service.href}
+                className={styles.serviceLink}
+              >
+                לפרטים נוספים
+                <span aria-hidden="true"> ←</span>
               </Link>
-            </div>
-          </div>
+            </article>
+          ))}
         </div>
       </section>
 
-      {/* CTA */}
+      <section className={styles.onlineSection}>
+        <div>
+          <h2>ליווי תזונתי גם אונליין</h2>
+
+          <p>
+            טיפול מקצועי, אישי ונגיש גם מרחוק,
+            בהתאם לצרכים ולשגרת החיים שלך.
+          </p>
+        </div>
+
+        <Link
+          href="/contact"
+          className={styles.secondaryButton}
+        >
+          לפרטים ותיאום פגישה
+        </Link>
+      </section>
+
       <section className={styles.cta}>
-        <div className={styles.container}>
-          <h2>מוכן/ה להתחיל?</h2>
-          <p>נבנה תהליך מותאם אישית, רגוע ומדויק – יחד.</p>
-          <div className={styles.ctaButtons}>
-            <Link href="/contact" className={styles.primaryButton}>
-              צור קשר
-            </Link>
-            <Link href="/services" className={styles.secondaryButton}>
-              לשירותים
-            </Link>
-          </div>
-        </div>
-      </section>
+        <h2>מתחילים בתהליך שמתאים לך</h2>
 
-      {/* כפתור וואטסאפ מרחף */}
-      <a
-        href="https://wa.me/972546433573?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%90%D7%99%D7%AA%D7%99!%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D."
-        target="_blank"
-        rel="noopener noreferrer"
-        className={styles.whatsappButton}
-        aria-label="צ׳אט בוואטסאפ"
-      >
-        💬
-      </a>
-    </div>
+        <p>
+          שינוי הרגלים מתחיל בהיכרות ובהתאמת הדרך
+          לצרכים שלך.
+        </p>
+
+        <Link
+          href="/contact"
+          className={styles.primaryButton}
+        >
+          לקביעת פגישה
+        </Link>
+      </section>
+    </main>
   );
 }
