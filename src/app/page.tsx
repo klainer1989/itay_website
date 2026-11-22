@@ -71,24 +71,20 @@ export default function Home() {
             תזונה קלינית • בריאטריה • אורח חיים בריא
           </span>
 
-          <h1 className={styles.heroTitle}>
-            איתי קליינר
-            <span>דיאטן קליני</span>
-          </h1>
+         <h1 className={styles.heroTitle}>
+  איתי קליינר
+  <span>דיאטן קליני</span>
+</h1>
 
-          <h2 className={styles.heroSubtitle}>
-            תזונה מקצועית. גישה אישית.
-            <br />
-            שינוי לאורך זמן.
-          </h2>
+<h2 className={styles.heroSubtitle}>
+  טיפול תזונתי בגישה הוליסטית
+</h2>
 
-          <p className={styles.heroDescription}>
-            ליווי תזונתי מבוסס מדע, המותאם לצרכים,
-            למטרות ולאורח החיים שלך.
-            <br />
-            בריאטריה, טיפול בהשמנה, תזונת תינוקות,
-            ילדים ונוער, מחלות מטבוליות והגיל השלישי.
-          </p>
+<p className={styles.heroDescription}>
+  ליווי תזונתי מבוסס מדע ופסיכולוגיה,
+  המשלב כלים מעולמות הטיפול והפעילות הגופנית,
+  בהתאמה לצרכים האישיים ולאורח החיים שלך.
+</p>
 
           <div className={styles.heroButtons}>
             <Link
