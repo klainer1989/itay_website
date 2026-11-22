@@ -307,3 +307,94 @@
   }
 }
 
+
+/* ===== Unified Homepage Colors ===== */
+
+.main {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.hero {
+  background: #f8faf7;
+}
+
+.eyebrow,
+.sectionEyebrow {
+  color: #2c7a2c;
+}
+
+.heroTitle,
+.heroTitle span {
+  color: #0f172a;
+}
+
+.heroSubtitle {
+  color: #2c7a2c;
+}
+
+.heroDescription {
+  color: #475569;
+}
+
+.sectionHeading h2,
+.serviceCard h3,
+.onlineSection h2,
+.cta h2 {
+  color: #0f172a;
+}
+
+.sectionHeading p,
+.serviceCard p,
+.onlineSection p,
+.cta p {
+  color: #475569;
+}
+
+.primaryButton {
+  background: #2c7a2c;
+  color: #ffffff;
+}
+
+.primaryButton:hover {
+  background: #246624;
+  color: #ffffff;
+}
+
+.secondaryButton {
+  background: #ffffff;
+  border: 2px solid #2c7a2c;
+  color: #2c7a2c;
+}
+
+.secondaryButton:hover {
+  background: #f1f8f1;
+  color: #246624;
+}
+
+.serviceIcon {
+  background: #eaf5ea;
+  color: #2c7a2c;
+}
+
+.serviceLink {
+  color: #2c7a2c;
+}
+
+.onlineSection,
+.cta {
+  background: #f8faf7;
+}
+.heroTitle {
+  font-size: clamp(38px, 5vw, 56px);
+}
+
+.heroTitle span {
+  font-size: clamp(24px, 3vw, 32px);
+  color: #0f172a;
+}
+
+.heroSubtitle {
+  color: #2c7a2c;
+  font-size: clamp(22px, 2.5vw, 28px);
+}
